@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world version="1.0" width="2" height="2">
+ <BMPToTMX>
+  <tmxexportdir path="."/>
+  <rulesfile path=""/>
+  <blendsfile path=""/>
+  <mapbasefile path=""/>
+  <assign-maps-to-world checked="true"/>
+  <warn-unknown-colors checked="true"/>
+  <compress checked="true"/>
+  <copy-pixels checked="true"/>
+  <update-existing checked="false"/>
+ </BMPToTMX>
+ <TMXToBMP>
+  <mainImage generate="true"/>
+  <vegetationImage generate="true"/>
+  <buildingsImage path="../images/sagewood_N_quad.bmp" generate="false"/>
+ </TMXToBMP>
+ <GenerateLots>
+  <exportdir path="../lots"/>
+  <ZombieSpawnMap path="../images/600x600_zombie_spawn_map_3_OCT_2024.png"/>
+  <TileDefFolder path="../../../Tiles"/>
+  <worldOrigin origin="35,37"/>
+ </GenerateLots>
+ <LuaSettings>
+  <spawnPointsFile path="../spawnpoints.lua"/>
+  <worldObjectsFile path="../objects.lua"/>
+ </LuaSettings>
+ <bmp path="../images/sagewood_n_0,0.png" x="0" y="0" width="1" height="1"/>
+ <bmp path="north.png" x="1" y="0" width="1" height="1"/>
+ <bmp path="west.png" x="0" y="1" width="1" height="1"/>
+ <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
+ <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
+ <propertyenum name="Skin" choices="White,Black" multi="false"/>
+ <propertyenum name="RoomTone" choices="Generic,Barn,Mall,Warehouse,Prison,Church,Office,Factory" multi="false"/>
+ <propertyenum name="Professions" choices="all,unemployed,policeofficer,constructionworker,securityguard,parkranger,fireofficer" multi="true"/>
+ <propertydef name="Direction" default="N" enum="Direction"/>
+ <propertydef name="FaceDirection" default="true"/>
+ <propertydef name="WaterDirection" default="0.0"/>
+ <propertydef name="WaterSpeed" default="0.0"/>
+ <propertydef name="WaterGround" default="false"/>
+ <propertydef name="WaterShore" default="true"/>
+ <propertydef name="Female" default="true"/>
+ <propertydef name="Outfit" default=""/>
+ <propertydef name="Pose" default="pose01" enum="Pose"/>
+ <propertydef name="Script" default=""/>
+ <propertydef name="Skin" default="White" enum="Skin"/>
+ <propertydef name="RoomTone" default="Generic" enum="RoomTone"/>
+ <propertydef name="EntireBuilding" default="false"/>
+ <propertydef name="Professions" default="all" enum="Professions">
+  <description>Comma-separated list of professions that may spawn here.  Use &quot;all&quot; to allow any profession to spawn here.</description>
+ </propertydef>
+ <template name="ParkingStallN">
+  <property name="Direction" value="N"/>
+ </template>
+ <template name="ParkingStallS">
+  <property name="Direction" value="S"/>
+ </template>
+ <template name="ParkingStallW">
+  <property name="Direction" value="W"/>
+ </template>
+ <template name="ParkingStallE">
+  <property name="Direction" value="E"/>
+ </template>
+ <template name="WaterFlowN">
+  <property name="WaterDirection" value="0"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowS">
+  <property name="WaterDirection" value="180"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowE">
+  <property name="WaterDirection" value="90"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowW">
+  <property name="WaterDirection" value="270"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterZone">
+  <property name="WaterGround" value="false"/>
+  <property name="WaterShore" value="true"/>
+ </template>
+ <template name="RoomTone">
+  <property name="RoomTone" value="Generic"/>
+  <property name="EntireBuilding" value="false"/>
+ </template>
+ <template name="SpawnPoint">
+  <description>This template holds the default set of properties for all spawn points in the world.</description>
+  <property name="Professions" value="all"/>
+ </template>
+ <objecttype name="TownZone"/>
+ <objecttype name="Forest"/>
+ <objecttype name="DeepForest"/>
+ <objecttype name="Nav"/>
+ <objecttype name="Vegitation"/>
+ <objecttype name="TrailerPark"/>
+ <objecttype name="Farm"/>
+ <objecttype name="ParkingStall"/>
+ <objecttype name="FarmLand"/>
+ <objecttype name="WaterFlow"/>
+ <objecttype name="WaterZone"/>
+ <objecttype name="Mannequin"/>
+ <objecttype name="RoomTone"/>
+ <objecttype name="SpawnPoint"/>
+ <objecttype name="ZombiesType"/>
+ <objectgroup name="ParkingStall" color="#ff007f" defaulttype="ParkingStall"/>
+ <objectgroup name="TownZone" color="#aa0000" defaulttype="TownZone"/>
+ <objectgroup name="Forest" color="#00aa00" defaulttype="Forest"/>
+ <objectgroup name="Nav" color="#55aaff" defaulttype="Nav"/>
+ <objectgroup name="DeepForest" color="#003500" defaulttype="DeepForest"/>
+ <objectgroup name="Vegitation" color="#b3b300" defaulttype="Vegitation"/>
+ <objectgroup name="TrailerPark" color="#f50000" defaulttype="TrailerPark"/>
+ <objectgroup name="Farm" color="#55ff7f" defaulttype="Farm"/>
+ <objectgroup name="FarmLand" color="#bcff7d" defaulttype="FarmLand"/>
+ <objectgroup name="WaterFlow" color="#0000ff" defaulttype="WaterFlow"/>
+ <objectgroup name="WaterZone" color="#0000ff" defaulttype="WaterZone"/>
+ <objectgroup name="Mannequin" color="#0000ff" defaulttype="Mannequin"/>
+ <objectgroup name="RoomTone" color="#0000ff" defaulttype="RoomTone"/>
+ <objectgroup name="ZombiesType" color="#555500" defaulttype="ZombiesType"/>
+ <cell x="1" y="0" map="../tmx_current/36_37.tmx">
+  <object type="SpawnPoint" x="189" y="297" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
+  <object group="DeepForest" type="DeepForest" x="0" y="122" level="0" width="180" height="176"/>
+  <object group="DeepForest" type="DeepForest" x="205" y="132" level="0" width="93" height="155"/>
+  <object group="DeepForest" type="DeepForest" x="-1" y="0" level="0" width="299" height="49"/>
+  <object group="DeepForest" type="DeepForest" x="249" y="50" level="0" width="55" height="35"/>
+  <object group="DeepForest" type="DeepForest" x="-6" y="51" level="0" width="241" height="39"/>
+  <object group="Forest" type="Forest" x="-4" y="91" level="0" width="315" height="25"/>
+  <object group="Forest" type="Forest" x="182" y="112" level="0" width="113" height="20"/>
+  <object group="Forest" type="Forest" x="292" y="102" level="0" width="11" height="31"/>
+  <object group="Forest" type="Forest" x="234" y="50" level="0" width="19" height="49"/>
+  <object group="Forest" type="Forest" x="163" y="81" level="0" width="40" height="10"/>
+  <object group="Forest" type="Forest" x="47" y="84" level="0" width="57" height="10"/>
+  <object group="Forest" type="Forest" x="42" y="116" level="0" width="143" height="7"/>
+  <object group="Forest" type="Forest" x="181" y="127" level="0" width="20" height="172"/>
+  <object group="Forest" type="Forest" x="196" y="126" level="0" width="12" height="172"/>
+  <object group="Forest" type="Forest" x="204" y="287" level="0" width="95" height="11"/>
+  <object group="Forest" type="Forest" x="-1" y="285" level="0" width="77" height="13"/>
+  <object group="Forest" type="Forest" x="118" y="213" level="0" width="14" height="36"/>
+  <object group="Forest" type="Forest" x="74" y="121" level="0" width="38" height="28"/>
+  <object group="Forest" type="Forest" x="116" y="120" level="0" width="68" height="24"/>
+  <object group="Forest" type="Forest" x="179" y="141" level="0" width="4" height="23"/>
+  <object group="Forest" type="Forest" x="176" y="171" level="0" width="7" height="15"/>
+  <object group="Forest" type="Forest" x="173" y="142" level="0" width="7" height="14"/>
+  <object group="Forest" type="Forest" x="131" y="71" level="0" width="20" height="7"/>
+  <object group="Forest" type="Forest" x="211" y="60" level="0" width="13" height="18"/>
+  <object group="Forest" type="Forest" x="30" y="9" level="0" width="17" height="11"/>
+  <object group="Forest" type="Forest" x="34" y="5" level="0" width="17" height="8"/>
+  <object group="Forest" type="Forest" x="2" y="11" level="0" width="12" height="9"/>
+  <object group="Forest" type="Forest" x="2" y="42" level="0" width="10" height="8"/>
+ </cell>
+ <cell x="0" y="1" map="../tmx_current/35_38.tmx">
+  <object group="Nav" type="Nav" x="99" y="228" level="0" width="202" height="10"/>
+  <object group="Nav" type="Nav" x="85" y="0" level="0" width="14" height="300"/>
+  <object type="SpawnPoint" x="298" y="232" level="0" width="1" height="1"/>
+  <object group="Forest" type="Forest" x="99" y="201" level="0" width="201" height="49"/>
+  <object group="Forest" type="Forest" x="100" y="250" level="0" width="23" height="14"/>
+  <object group="Forest" type="Forest" x="74" y="0" level="0" width="32" height="301"/>
+  <object group="Forest" type="Forest" x="29" y="0" level="0" width="45" height="32"/>
+  <object group="Forest" type="Forest" x="105" y="-1" level="0" width="31" height="37"/>
+  <object group="DeepForest" type="DeepForest" x="-1" y="-1" level="0" width="30" height="305"/>
+  <object group="DeepForest" type="DeepForest" x="29" y="31" level="0" width="44" height="270"/>
+  <object group="DeepForest" type="DeepForest" x="106" y="36" level="0" width="30" height="165"/>
+  <object group="DeepForest" type="DeepForest" x="135" y="-1" level="0" width="163" height="201"/>
+ </cell>
+ <cell x="1" y="1" map="../tmx_current/36_38.tmx">
+  <template name="ParkingStallW"/>
+  <lot x="14" y="172" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_01.tbx"/>
+  <lot x="116" y="240" level="0" width="20" height="14" map="../../../TileZed/sagewood_bldgs/fossoil_01_20x16_S.tbx"/>
+  <lot x="13" y="141" level="0" width="66" height="26" map="../../../TileZed/sagewood_bldgs/block_02.tbx"/>
+  <lot x="142" y="240" level="0" width="22" height="14" map="../../../TileZed/sagewood_bldgs/hotel_01_16x19_E.tbx"/>
+  <lot x="14" y="238" level="0" width="66" height="26" map="../../../TileZed/sagewood_bldgs/block_03.tbx"/>
+  <lot x="193" y="23" level="0" width="24" height="15" map="../../../TileZed/sagewood_bldgs/fossoil_02_24x16_N.tbx"/>
+  <lot x="222" y="203" level="0" width="64" height="26" map="../../../TileZed/sagewood_bldgs/block_04.tbx"/>
+  <lot x="224" y="240" level="0" width="63" height="23" map="../../../TileZed/sagewood_bldgs/block_05.tbx"/>
+  <lot x="223" y="175" level="0" width="60" height="16" map="../../../TileZed/sagewood_bldgs/block_06.tbx"/>
+  <lot x="16" y="15" level="0" width="61" height="21" map="../../../TileZed/sagewood_bldgs/block_08.tbx"/>
+  <lot x="14" y="49" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_09.tbx"/>
+  <lot x="224" y="143" level="0" width="61" height="21" map="../../../TileZed/sagewood_bldgs/block_10.tbx"/>
+  <lot x="14" y="79" level="0" width="66" height="26" map="../../../TileZed/sagewood_bldgs/block_11.tbx"/>
+  <lot x="224" y="13" level="0" width="64" height="24" map="../../../TileZed/sagewood_bldgs/block_12.tbx"/>
+  <lot x="14" y="110" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_13.tbx"/>
+  <lot x="221" y="47" level="0" width="69" height="27" map="../../../TileZed/sagewood_bldgs/block_14.tbx"/>
+  <lot x="224" y="110" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_15.tbx"/>
+  <lot x="14" y="203" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_16.tbx"/>
+  <lot x="85" y="238" level="0" width="25" height="16" map="../../../TileZed/sagewood_bldgs/block_small_01_16x25.tbx"/>
+  <lot x="167" y="238" level="0" width="20" height="16" map="../../../TileZed/sagewood_bldgs/block_small_02_20x16.tbx"/>
+  <lot x="193" y="238" level="0" width="23" height="16" map="../../../TileZed/sagewood_bldgs/block_small_03_23x16.tbx"/>
+  <lot x="165" y="21" level="0" width="23" height="19" map="../../../TileZed/sagewood_bldgs/block_small_04_20x16.tbx"/>
+  <lot x="142" y="23" level="0" width="18" height="15" map="../../../TileZed/sagewood_bldgs/block_small_05_19x16.tbx"/>
+  <lot x="115" y="23" level="0" width="20" height="14" map="../../../TileZed/sagewood_bldgs/block_small_06_20x16.tbx"/>
+  <lot x="85" y="22" level="0" width="24" height="16" map="../../../TileZed/sagewood_bldgs/block_small_07_24x16.tbx"/>
+  <lot x="226" y="81" level="0" width="59" height="21" map="../../../TileZed/sagewood_bldgs/block_07.tbx"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="79" y="206" level="0" width="3" height="19">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="85" y="116" level="0" width="6" height="84">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="93" y="112" level="0" width="6" height="44">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="79" y="175" level="0" width="3" height="19">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="79" y="137" level="0" width="3" height="32">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="17" y="166" level="0" width="62" height="6">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="17" y="197" level="0" width="59" height="6">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="spiffo" group="ParkingStall" type="ParkingStall" x="91" y="254" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="97" y="173" level="0" width="7" height="53">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="110" y="258" level="0" width="6" height="42">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="17" y="228" level="0" width="59" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="17" y="235" level="0" width="59" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="146" y="254" level="0" width="12" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="122" y="249" level="0" width="12" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object group="Nav" type="Nav" x="109" y="225" level="0" width="8" height="75"/>
+  <object group="Nav" type="Nav" x="11" y="263" level="0" width="74" height="3"/>
+  <object group="Nav" type="Nav" x="11" y="10" level="0" width="3" height="253"/>
+  <object group="Nav" type="Nav" x="14" y="10" level="0" width="70" height="3"/>
+  <object group="Nav" type="Nav" x="14" y="226" level="0" width="65" height="14"/>
+  <object group="Nav" type="Nav" x="79" y="238" level="0" width="6" height="25"/>
+  <object group="Nav" type="Nav" x="85" y="254" level="0" width="131" height="6"/>
+  <object group="Nav" type="Nav" x="216" y="238" level="0" width="6" height="28"/>
+  <object group="Nav" type="Nav" x="222" y="263" level="0" width="68" height="3"/>
+  <object group="Nav" type="Nav" x="286" y="10" level="0" width="5" height="257"/>
+  <object group="Nav" type="Nav" x="215" y="9" level="0" width="76" height="5"/>
+  <object group="Nav" type="Nav" x="215" y="9" level="0" width="8" height="29"/>
+  <object group="Nav" type="Nav" x="78" y="9" level="0" width="8" height="29"/>
+  <object group="Nav" type="Nav" x="78" y="15" level="0" width="146" height="8"/>
+  <object group="Nav" type="Nav" x="107" y="15" level="0" width="10" height="23"/>
+  <object group="Nav" type="Nav" x="131" y="15" level="0" width="12" height="23"/>
+  <object group="Nav" type="Nav" x="157" y="15" level="0" width="11" height="23"/>
+  <object group="Nav" type="Nav" x="185" y="0" level="0" width="8" height="38"/>
+  <object group="Nav" type="Nav" x="14" y="38" level="0" width="273" height="10"/>
+  <object group="Nav" type="Nav" x="194" y="48" level="0" width="29" height="191"/>
+  <object group="Nav" type="Nav" x="219" y="73" level="0" width="68" height="7"/>
+  <object group="Nav" type="Nav" x="222" y="104" level="0" width="65" height="7"/>
+  <object group="Nav" type="Nav" x="222" y="129" level="0" width="66" height="8"/>
+  <object group="Nav" type="Nav" x="223" y="164" level="0" width="64" height="9"/>
+  <object group="Nav" type="Nav" x="223" y="196" level="0" width="64" height="8"/>
+  <object group="Nav" type="Nav" x="223" y="226" level="0" width="63" height="11"/>
+  <object group="Nav" type="Nav" x="77" y="224" level="0" width="146" height="14"/>
+  <object group="Nav" type="Nav" x="186" y="237" level="0" width="8" height="18"/>
+  <object group="Nav" type="Nav" x="160" y="237" level="0" width="8" height="18"/>
+  <object group="Nav" type="Nav" x="135" y="237" level="0" width="9" height="18"/>
+  <object group="Nav" type="Nav" x="75" y="37" level="0" width="31" height="193"/>
+  <object group="Nav" type="Nav" x="12" y="197" level="0" width="81" height="6"/>
+  <object group="Nav" type="Nav" x="14" y="165" level="0" width="76" height="8"/>
+  <object group="Nav" type="Nav" x="12" y="134" level="0" width="71" height="7"/>
+  <object group="Nav" type="Nav" x="12" y="103" level="0" width="75" height="7"/>
+  <object group="Nav" type="Nav" x="13" y="72" level="0" width="73" height="8"/>
+  <object group="Nav" type="Nav" x="112" y="48" level="0" width="78" height="178"/>
+  <object group="Nav" type="Nav" x="-1" y="228" level="0" width="12" height="9"/>
+  <object type="SpawnPoint" x="133" y="190" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="132" y="243" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="72" y="151" level="5" width="1" height="1"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="195" y="24" level="0" width="5" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="203" y="23" level="0" width="9" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="195" y="46" level="0" width="6" height="183">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="Police" group="ZombiesType" type="ZombiesType" x="218" y="42" level="0" width="71" height="31"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="223" y="203" level="0" width="42" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="223" y="211" level="0" width="24" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="223" y="216" level="0" width="24" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="223" y="223" level="0" width="24" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="spiffos" group="ParkingStall" type="ParkingStall" x="250" y="223" level="0" width="3" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="251" y="210" level="0" width="3" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="256" y="210" level="0" width="7" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="mccoy" group="ParkingStall" type="ParkingStall" x="239" y="155" level="0" width="3" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="mccoy" group="ParkingStall" type="ParkingStall" x="243" y="155" level="0" width="3" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="222" y="73" level="0" width="65" height="6"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="222" y="135" level="0" width="65" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="222" y="104" level="0" width="65" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="79" y="43" level="0" width="6" height="63"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="114" y="43" level="0" width="79" height="4"/>
+  <object name="spiffo" group="ParkingStall" type="ParkingStall" x="239" y="35" level="0" width="48" height="3">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="burnt" group="ParkingStall" type="ParkingStall" x="204" y="235" level="0" width="12" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object group="ParkingStall" type="SpawnPoint" x="230" y="24" level="2" width="1" height="1"/>
+  <object type="SpawnPoint" x="131" y="79" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="39" y="249" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="275" y="219" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="270" y="207" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="208" y="111" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="222" y="40" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="270" y="9" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="158" y="20" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="287" y="119" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="191" y="62" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="107" y="49" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="14" y="35" level="0" width="1" height="1"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="17" y="242" level="0" width="18" height="16">
+   <template name="ParkingStallW"/>
+  </object>
+  <object type="SpawnPoint" x="20" y="106" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="276" y="43" level="0" width="1" height="1"/>
+  <object type="SpawnPoint" x="240" y="75" level="0" width="1" height="1"/>
+  <object name="fire" group="ParkingStall" type="ParkingStall" x="231" y="176" level="0" width="3" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="fire" group="ParkingStall" type="ParkingStall" x="236" y="176" level="0" width="3" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="fire" group="ParkingStall" type="ParkingStall" x="241" y="180" level="0" width="3" height="8">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="fire" group="ParkingStall" type="ParkingStall" x="246" y="176" level="0" width="3" height="12">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="225" y="175" level="0" width="4" height="12">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="McCoys" group="ZombiesType" type="ZombiesType" x="223" y="138" level="0" width="43" height="31"/>
+  <object name="Spiffo" group="ZombiesType" type="ZombiesType" x="223" y="11" level="0" width="27" height="27"/>
+  <object name="Bar" group="ZombiesType" type="ZombiesType" x="231" y="195" level="0" width="57" height="34"/>
+  <object name="fire" group="ParkingStall" type="ParkingStall" x="222" y="189" level="0" width="64" height="8">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="Fossoil" group="ZombiesType" type="ZombiesType" x="189" y="21" level="0" width="30" height="19"/>
+  <object name="Fossoil" group="ZombiesType" type="ZombiesType" x="114" y="232" level="0" width="23" height="24"/>
+  <object name="FancyHotel" group="ZombiesType" type="ZombiesType" x="140" y="236" level="0" width="22" height="20"/>
+  <object name="PizzaWhirled" group="ZombiesType" type="ZombiesType" x="54" y="12" level="0" width="27" height="28"/>
+  <object name="PileOCrepe" group="ZombiesType" type="ZombiesType" x="163" y="235" level="0" width="26" height="21"/>
+  <object name="VariousFoodMarket" group="ZombiesType" type="ZombiesType" x="13" y="141" level="0" width="30" height="25"/>
+  <object name="VariousFoodMarket" group="ZombiesType" type="ZombiesType" x="49" y="78" level="3" width="30" height="26"/>
+  <object name="VariousFoodMarket" group="ZombiesType" type="ZombiesType" x="13" y="78" level="4" width="28" height="25"/>
+  <object name="Restaurant" group="ZombiesType" type="ZombiesType" x="12" y="77" level="5" width="68" height="27"/>
+  <object name="Pharmacist" group="ZombiesType" type="ZombiesType" x="51" y="79" level="1" width="28" height="25"/>
+  <object name="Offices" group="ZombiesType" type="ZombiesType" x="39" y="183" level="0" width="24" height="13"/>
+  <object name="Offices" group="ZombiesType" type="ZombiesType" x="39" y="173" level="0" width="16" height="11"/>
+  <object name="Beach" group="ZombiesType" type="ZombiesType" x="132" y="114" level="0" width="36" height="40"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="210" y="61" level="0" width="7" height="128">
+   <template name="ParkingStallN"/>
+  </object>
+  <object type="SpawnPoint" x="252" y="197" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+   <property name="Professions" value="fireofficer"/>
+  </object>
+  <object type="SpawnPoint" x="283" y="173" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+   <property name="Professions" value="fireofficer"/>
+  </object>
+  <object name="School" group="ZombiesType" type="ZombiesType" x="12" y="46" level="0" width="67" height="27"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="224" y="114" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="224" y="120" level="0" width="4" height="9">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="228" y="129" level="0" width="15" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="278" y="111" level="0" width="9" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="283" y="120" level="0" width="4" height="12">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="276" y="123" level="0" width="4" height="9">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="269" y="123" level="0" width="4" height="9">
+   <template name="ParkingStallE"/>
+  </object>
+  <object group="TownZone" type="TownZone" x="9" y="9" level="0" width="77" height="255"/>
+  <object group="TownZone" type="TownZone" x="214" y="9" level="0" width="78" height="258"/>
+  <object group="TownZone" type="TownZone" x="85" y="224" level="0" width="135" height="36"/>
+  <object group="TownZone" type="TownZone" x="83" y="15" level="0" width="148" height="35"/>
+  <object group="TownZone" type="TownZone" x="73" y="32" level="0" width="32" height="229"/>
+  <object group="TownZone" type="TownZone" x="82" y="53" level="0" width="112" height="205"/>
+  <object group="Vegitation" type="Vegitation" x="90" y="176" level="0" width="4" height="17"/>
+  <object group="Vegitation" type="Vegitation" x="90" y="114" level="0" width="4" height="17"/>
+  <object group="Vegitation" type="Vegitation" x="207" y="176" level="0" width="4" height="17"/>
+  <object group="Forest" type="Forest" x="108" y="51" level="0" width="85" height="173"/>
+  <object group="Forest" type="Forest" x="85" y="8" level="0" width="100" height="7"/>
+  <object group="Forest" type="Forest" x="193" y="7" level="0" width="21" height="9"/>
+  <object group="Forest" type="Forest" x="193" y="-1" level="0" width="107" height="10"/>
+  <object group="Forest" type="Forest" x="291" y="8" level="0" width="8" height="292"/>
+  <object group="Forest" type="Forest" x="216" y="267" level="0" width="75" height="33"/>
+  <object group="Forest" type="Forest" x="117" y="261" level="0" width="99" height="39"/>
+  <object group="Forest" type="Forest" x="86" y="260" level="0" width="23" height="40"/>
+  <object group="Forest" type="Forest" x="9" y="266" level="0" width="77" height="34"/>
+  <object group="Forest" type="Forest" x="-1" y="238" level="0" width="11" height="62"/>
+  <object group="Forest" type="Forest" x="-1" y="-1" level="0" width="11" height="228"/>
+  <object group="Forest" type="Forest" x="9" y="-1" level="0" width="176" height="10"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="210,162 211,162 211,145 207,145 207,154 210,157"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="210,131 211,131 211,114 207,114 207,123 210,126"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="210,100 211,100 211,83 207,83 207,92 210,95"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="207,52 208,52 208,57 211,60 211,69 210,69 210,64 207,61"/>
+  <object level="0" geometry="polyline" points="90,52 91,52 91,61 94,64 94,69 90,69"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="90,83 91,83 91,92 94,95 94,100 90,100"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="90,162 94,162 94,157 91,154 91,145 90,145"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polyline" points="90,207 91,207 91,212 94,215 94,224 93,224 93,219 90,216"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="167" y="23" level="0" width="15" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="167" y="32" level="0" width="12" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+ </cell>
+</world>

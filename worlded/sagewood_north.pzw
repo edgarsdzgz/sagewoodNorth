@@ -176,19 +176,11 @@
   <lot x="175" y="52" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_68.tbx"/>
   <lot x="147" y="14" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_55.tbx"/>
   <lot x="179" y="14" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_56.tbx"/>
-  <lot x="250" y="274" level="1" width="24" height="16" map="../../../TileZed/sagewood_bldgs/block_small_07_24x16.tbx"/>
+  <lot x="210" y="98" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_09.tbx"/>
+  <lot x="247" y="271" level="0" width="24" height="16" map="../../../TileZed/sagewood_bldgs/block_small_07_24x16.tbx"/>
   <object group="Nav" type="Nav" x="99" y="228" level="0" width="202" height="10"/>
   <object group="Nav" type="Nav" x="85" y="0" level="0" width="14" height="300"/>
   <object type="SpawnPoint" x="298" y="232" level="0" width="1" height="1"/>
-  <object group="Forest" type="Forest" x="99" y="201" level="0" width="201" height="49"/>
-  <object group="Forest" type="Forest" x="100" y="250" level="0" width="23" height="14"/>
-  <object group="Forest" type="Forest" x="74" y="0" level="0" width="32" height="301"/>
-  <object group="Forest" type="Forest" x="29" y="0" level="0" width="45" height="32"/>
-  <object group="Forest" type="Forest" x="105" y="-1" level="0" width="31" height="37"/>
-  <object group="DeepForest" type="DeepForest" x="-1" y="-1" level="0" width="30" height="305"/>
-  <object group="DeepForest" type="DeepForest" x="29" y="31" level="0" width="44" height="270"/>
-  <object group="DeepForest" type="DeepForest" x="106" y="36" level="0" width="30" height="165"/>
-  <object group="DeepForest" type="DeepForest" x="135" y="-1" level="0" width="163" height="201"/>
   <object type="SpawnPoint" x="108" y="224" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
   </object>
@@ -213,7 +205,6 @@
   <lot x="224" y="240" level="0" width="63" height="23" map="../../../TileZed/sagewood_bldgs/block_05.tbx"/>
   <lot x="223" y="175" level="0" width="60" height="16" map="../../../TileZed/sagewood_bldgs/block_06.tbx"/>
   <lot x="16" y="15" level="0" width="61" height="21" map="../../../TileZed/sagewood_bldgs/block_08.tbx"/>
-  <lot x="14" y="49" level="0" width="65" height="25" map="../../../TileZed/sagewood_bldgs/block_09.tbx"/>
   <lot x="224" y="143" level="0" width="61" height="21" map="../../../TileZed/sagewood_bldgs/block_10.tbx"/>
   <lot x="14" y="79" level="0" width="66" height="26" map="../../../TileZed/sagewood_bldgs/block_11.tbx"/>
   <lot x="224" y="13" level="0" width="64" height="24" map="../../../TileZed/sagewood_bldgs/block_12.tbx"/>

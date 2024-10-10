@@ -1,0 +1,32 @@
+HOUSE CHECKLIST
+
+Bathroom
+  - Lightswitch
+
+Bedroom
+  - Lightswitch
+
+Closet
+  - Lightswitch
+  - Metal Shelf
+
+Dining Room
+  - Lightswitch
+
+Garagestorage?
+  - Lightswitch
+  - Metal Shelf
+
+Kitchen
+  - Lightswitch
+  - Oven
+  - Fridge
+  - Sink in Kitchen
+
+BUSINESS CHECKLIST
+  - Lightswitches
+  - Office?
+  - Bathroom?
+  - Storage?
+  - Janitor?
+  - Closet?

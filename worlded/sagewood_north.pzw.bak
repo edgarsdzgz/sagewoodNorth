@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<world version="1.0" width="2" height="2">
+<world version="1.0" width="3" height="2">
  <BMPToTMX>
-  <tmxexportdir path="."/>
+  <tmxexportdir path="../tmx"/>
   <rulesfile path=""/>
   <blendsfile path=""/>
   <mapbasefile path=""/>
@@ -29,6 +29,9 @@
  <bmp path="../images/sagewood_n_0,0.png" x="0" y="0" width="1" height="1"/>
  <bmp path="north.png" x="1" y="0" width="1" height="1"/>
  <bmp path="west.png" x="0" y="1" width="1" height="1"/>
+ <bmp path="../images/East_River_Expansion/East_River_Expansion.png" x="2" y="0" width="1" height="2"/>
+ <bmp path="../images/East_River_Expansion/East_River_Expansion.png" x="2" y="0" width="1" height="2"/>
+ <bmp path="../images/East_River_Expansion.png" x="2" y="0" width="1" height="2"/>
  <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
  <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
  <propertyenum name="Skin" choices="White,Black" multi="false"/>
@@ -119,6 +122,7 @@
  <objectgroup name="Mannequin" color="#0000ff" defaulttype="Mannequin"/>
  <objectgroup name="RoomTone" color="#0000ff" defaulttype="RoomTone"/>
  <objectgroup name="ZombiesType" color="#555500" defaulttype="ZombiesType"/>
+ <cell x="0" y="0" map="../tmx/35_37.tmx"/>
  <cell x="1" y="0" map="../tmx/36_37.tmx">
   <lot x="108" y="272" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_01.tbx"/>
   <lot x="-2" y="274" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_16.tbx"/>
@@ -128,40 +132,120 @@
   <object type="SpawnPoint" x="189" y="297" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
   </object>
-  <object group="DeepForest" type="DeepForest" x="3" y="122" level="0" width="180" height="176"/>
-  <object group="DeepForest" type="DeepForest" x="205" y="132" level="0" width="93" height="155"/>
-  <object group="DeepForest" type="DeepForest" x="-1" y="0" level="0" width="299" height="49"/>
-  <object group="DeepForest" type="DeepForest" x="249" y="50" level="0" width="55" height="35"/>
-  <object group="DeepForest" type="DeepForest" x="-6" y="51" level="0" width="241" height="39"/>
-  <object group="Forest" type="Forest" x="-4" y="91" level="0" width="315" height="25"/>
-  <object group="Forest" type="Forest" x="182" y="112" level="0" width="113" height="20"/>
-  <object group="Forest" type="Forest" x="292" y="102" level="0" width="11" height="31"/>
-  <object group="Forest" type="Forest" x="234" y="50" level="0" width="19" height="49"/>
-  <object group="Forest" type="Forest" x="163" y="81" level="0" width="40" height="10"/>
-  <object group="Forest" type="Forest" x="47" y="84" level="0" width="57" height="10"/>
-  <object group="Forest" type="Forest" x="42" y="116" level="0" width="143" height="7"/>
-  <object group="Forest" type="Forest" x="181" y="127" level="0" width="20" height="172"/>
-  <object group="Forest" type="Forest" x="196" y="126" level="0" width="12" height="172"/>
-  <object group="Forest" type="Forest" x="204" y="287" level="0" width="95" height="11"/>
-  <object group="Forest" type="Forest" x="-1" y="285" level="0" width="77" height="13"/>
-  <object group="Forest" type="Forest" x="118" y="213" level="0" width="14" height="36"/>
-  <object group="Forest" type="Forest" x="74" y="121" level="0" width="38" height="28"/>
-  <object group="Forest" type="Forest" x="116" y="120" level="0" width="68" height="24"/>
-  <object group="Forest" type="Forest" x="179" y="141" level="0" width="4" height="23"/>
-  <object group="Forest" type="Forest" x="176" y="171" level="0" width="7" height="15"/>
-  <object group="Forest" type="Forest" x="173" y="142" level="0" width="7" height="14"/>
-  <object group="Forest" type="Forest" x="131" y="71" level="0" width="20" height="7"/>
-  <object group="Forest" type="Forest" x="211" y="60" level="0" width="13" height="18"/>
-  <object group="Forest" type="Forest" x="30" y="9" level="0" width="17" height="11"/>
-  <object group="Forest" type="Forest" x="34" y="5" level="0" width="17" height="8"/>
-  <object group="Forest" type="Forest" x="2" y="11" level="0" width="12" height="9"/>
-  <object group="Forest" type="Forest" x="2" y="42" level="0" width="10" height="8"/>
   <object x="108" y="247" level="0" width="1" height="1"/>
   <object x="66" y="222" level="0" width="1" height="1"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="300,112 300,96 299,97 295,97 294,96 282,96 281,97 279,97 278,96 269,96 268,97 258,97 257,96 246,96 245,97 242,97 241,96 0,96 0,112"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="211,300 222,300 222,189 222,183 206,183 206,189 211,189"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="205,300 196,300 196,181 203,183 206,183"/>
+  <object group="Nav" type="Nav" x="105" y="259" level="0" width="91" height="10"/>
+  <object group="Nav" type="Nav" x="105" y="224" level="0" width="91" height="10"/>
+  <object group="Nav" type="Nav" x="222" y="183" level="0" width="78" height="6"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="216,183 215,182 234,146 255,125 281,112 292,112 253,132 240,145 222,181 222,183"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="196,181 203,183 185,147 164,126 156,122 156,121 174,112 163,112 151,118 148,118 136,112 125,112 143,121 143,123 137,126 117,146 107,166 106,167 98,182 99,183 105,183 105,181 122,147 123,145 136,132 149,125 151,125 163,131 179,147"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="8,112 19,112 21,113 23,114 47,126 68,147 86,183 79,183 79,181 62,147 46,131"/>
+  <object group="Nav" type="Nav" x="94" y="183" level="0" width="11" height="118"/>
+  <object group="Nav" type="Nav" x="78" y="183" level="0" width="11" height="117"/>
+  <object group="Nav" type="Nav" x="89" y="183" level="0" width="5" height="6"/>
+  <object group="Nav" type="Nav" x="89" y="223" level="0" width="5" height="11"/>
+  <object group="Nav" type="Nav" x="89" y="259" level="0" width="5" height="10"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="78,190 78,183 8,183 8,300 14,300 14,269 78,269 78,259 14,259 14,234 78,234 78,224 14,224 14,190"/>
+  <object group="TownZone" type="TownZone" x="14" y="191" level="0" width="64" height="32"/>
+  <object group="TownZone" type="TownZone" x="13" y="235" level="0" width="64" height="22"/>
+  <object group="TownZone" type="TownZone" x="13" y="270" level="0" width="64" height="29"/>
+  <object group="TownZone" type="TownZone" x="104" y="269" level="0" width="90" height="30"/>
+  <object group="TownZone" type="TownZone" x="104" y="234" level="0" width="91" height="25"/>
+  <object group="DeepForest" type="DeepForest" level="0" geometry="polygon" points="1,94 12,95 13,88 25,87 43,89 35,92 52,95 48,88 54,82 60,82 71,86 68,91 76,93 77,90 87,83 97,85 100,81 103,85 99,88 106,94 122,87 145,88 150,93 158,93 158,89 162,86 160,80 169,77 178,80 183,73 188,75 195,82 209,83 224,83 219,79 214,79 212,72 220,67 221,72 219,74 228,83 239,92 241,91 258,91 259,83 264,76 274,79 281,89 296,93 302,94 297,0 54,2 49,9 41,8 45,17 34,15 38,10 35,1 23,1 22,3 17,0 0,0 0,93"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="20,112 125,112 143,121 142,123 137,126 117,146 101,178 83,177 68,147 47,126"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="0,115 8,112 46,131 62,147 76,179 5,179 5,300 0,299"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="169,138 163,131 151,125 149,125 136,132 123,145 108,176 107,221 193,222 193,177 194,177 178,147 169,163 162,171 158,173 156,175 160,174 162,176 163,182 157,184 155,182 152,185 152,188 142,194 134,195 124,183 125,179 125,176 123,174 121,176 118,175 117,172 120,170 123,168 125,172 127,172 128,170 125,166 122,162 124,159 127,157 127,155 129,155 131,158 137,159 142,157 146,159 148,155 150,155 152,159 153,161 168,138"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="137,112 163,112 152,118 148,118"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="182,144 186,139 193,140 202,140 208,141 214,143 219,144 224,147 231,153 218,177 200,177 185,147"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="225,189 261,189 260,193 253,198 243,206 239,217 235,232 237,245 241,257 246,262 254,270 269,281 275,283 284,286 293,290 297,294 301,296 301,300 225,299"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="235,157 225,177 225,182 261,183 254,175 246,175"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="301,112 292,112 253,132 240,145 239,148 242,148 242,150 246,146 250,146 251,147 254,144 252,141 257,140 258,139 257,135 262,135 264,130 280,122 285,122 288,124 291,121 294,121 296,119 298,119 299,120 300,120 300,112"/>
+  <object group="Forest" type="Forest" level="0" geometry="polygon" points="156,121 156,122 164,126 173,135 187,129 193,128 201,130 206,132 234,145 255,125 280,112 174,112"/>
+ </cell>
+ <cell x="2" y="0" map="../tmx/East_River_Expansion_37_37.tmx">
+  <object group="DeepForest" type="DeepForest" x="-2" y="-2" level="0" width="304" height="69"/>
+  <object group="DeepForest" type="DeepForest" x="3" y="67" level="0" width="156" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="4" y="73" level="0" width="30" height="23"/>
+  <object group="DeepForest" type="DeepForest" x="33" y="73" level="0" width="116" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="34" y="77" level="0" width="10" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="42" y="78" level="0" width="55" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="64" y="84" level="0" width="25" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="66" y="83" level="0" width="19" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="65" y="84" level="0" width="7" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="126" y="76" level="0" width="22" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="87" y="77" level="0" width="37" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="136" y="80" level="0" width="6" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="140" y="91" level="0" width="10" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="142" y="87" level="0" width="3" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="138" y="92" level="0" width="1" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="132" y="79" level="0" width="3" height="9"/>
+  <object group="DeepForest" type="DeepForest" x="129" y="82" level="0" width="2" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="174" y="64" level="0" width="33" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="183" y="70" level="0" width="19" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="158" y="68" level="0" width="11" height="1"/>
+  <object group="DeepForest" type="DeepForest" x="241" y="63" level="0" width="59" height="31"/>
+  <object group="DeepForest" type="DeepForest" x="235" y="64" level="0" width="6" height="17"/>
+  <object group="DeepForest" type="DeepForest" x="229" y="65" level="0" width="5" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="224" y="112" level="0" width="77" height="41"/>
+  <object group="DeepForest" type="DeepForest" x="243" y="149" level="0" width="55" height="151"/>
+  <object group="DeepForest" type="DeepForest" x="138" y="264" level="0" width="103" height="31"/>
+  <object group="DeepForest" type="DeepForest" x="123" y="261" level="0" width="19" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="130" y="265" level="0" width="10" height="18"/>
+  <object group="DeepForest" type="DeepForest" x="124" y="233" level="0" width="127" height="27"/>
+  <object group="DeepForest" type="DeepForest" x="142" y="261" level="0" width="105" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="121" y="211" level="0" width="18" height="18"/>
+  <object group="DeepForest" type="DeepForest" x="144" y="213" level="0" width="26" height="16"/>
+  <object group="DeepForest" type="DeepForest" x="171" y="219" level="0" width="4" height="11"/>
+  <object group="DeepForest" type="DeepForest" x="144" y="210" level="0" width="25" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="124" y="202" level="0" width="14" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="168" y="198" level="0" width="23" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="177" y="200" level="0" width="18" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="187" y="210" level="0" width="17" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="185" y="226" level="0" width="61" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="198" y="214" level="0" width="42" height="10"/>
+  <object group="DeepForest" type="DeepForest" x="211" y="204" level="0" width="31" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="221" y="198" level="0" width="16" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="223" y="191" level="0" width="23" height="10"/>
+  <object group="DeepForest" type="DeepForest" x="212" y="173" level="0" width="10" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="217" y="178" level="0" width="30" height="13"/>
+  <object group="DeepForest" type="DeepForest" x="214" y="116" level="0" width="8" height="39"/>
+  <object group="DeepForest" type="DeepForest" x="210" y="133" level="0" width="3" height="26"/>
+  <object group="DeepForest" type="DeepForest" x="206" y="136" level="0" width="4" height="10"/>
+  <object group="DeepForest" type="DeepForest" x="208" y="120" level="0" width="6" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="203" y="117" level="0" width="1" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="224" y="155" level="0" width="19" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="234" y="155" level="0" width="8" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="237" y="159" level="0" width="5" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="-2" y="176" level="0" width="32" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="16" y="171" level="0" width="10" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="23" y="168" level="0" width="3" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="9" y="183" level="0" width="27" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="15" y="189" level="0" width="26" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="23" y="196" level="0" width="50" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="19" y="194" level="0" width="42" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="0" y="190" level="0" width="2" height="80"/>
+  <object group="DeepForest" type="DeepForest" x="2" y="194" level="0" width="6" height="74"/>
+  <object group="DeepForest" type="DeepForest" x="7" y="205" level="0" width="9" height="64"/>
+  <object group="DeepForest" type="DeepForest" x="7" y="200" level="0" width="6" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="18" y="209" level="0" width="2" height="61"/>
+  <object group="DeepForest" type="DeepForest" x="22" y="214" level="0" width="5" height="61"/>
+  <object group="DeepForest" type="DeepForest" x="27" y="213" level="0" width="47" height="65"/>
+  <object group="DeepForest" type="DeepForest" x="76" y="215" level="0" width="8" height="60"/>
+  <object group="DeepForest" type="DeepForest" x="79" y="213" level="0" width="5" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="83" y="217" level="0" width="6" height="56"/>
+  <object group="DeepForest" type="DeepForest" x="88" y="229" level="0" width="5" height="32"/>
+  <object group="DeepForest" type="DeepForest" x="35" y="279" level="0" width="39" height="19"/>
+  <object group="DeepForest" type="DeepForest" x="27" y="277" level="0" width="6" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="76" y="268" level="0" width="4" height="25"/>
+  <object group="DeepForest" type="DeepForest" x="82" y="273" level="0" width="4" height="9"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="0,184 3,184 25,206 75,206 116,165 116,164 123,164 75,211 25,212 1,189 0,189"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="105,140 111,140 84,113 84,112 300,112 300,96 0,96 0,111 0,112 77,112"/>
  </cell>
  <cell x="0" y="1" map="../tmx/35_38.tmx">
   <lot x="135" y="276" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_53.tbx"/>
-  <lot x="123" y="7" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_54.tbx"/>
   <lot x="164" y="251" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_57.tbx"/>
   <lot x="186" y="251" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_58.tbx"/>
   <lot x="140" y="180" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_59.tbx"/>
@@ -174,11 +258,57 @@
   <lot x="175" y="84" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_66.tbx"/>
   <lot x="140" y="52" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_67.tbx"/>
   <lot x="175" y="52" level="0" width="17" height="25" map="../../../TileZed/sagewood_futura_bldgs/futura_block_68.tbx"/>
-  <lot x="147" y="14" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_55.tbx"/>
-  <lot x="179" y="14" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_56.tbx"/>
-  <lot x="210" y="98" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_09.tbx"/>
   <lot x="247" y="271" level="0" width="24" height="16" map="../../../TileZed/sagewood_bldgs/block_small_07_24x16.tbx"/>
-  <object group="Nav" type="Nav" x="99" y="228" level="0" width="202" height="10"/>
+  <lot x="284" y="66" level="0" width="7" height="3" map="../tmx/tbx/35_38/35_38_0_Electrician_284_66.tbx"/>
+  <lot x="276" y="59" level="0" width="15" height="7" map="../tmx/tbx/35_38/35_38_0_Electrician_276_59.tbx"/>
+  <lot x="291" y="58" level="0" width="3" height="4" map="../tmx/tbx/35_38/35_38_0_Electrician_290_59.tbx"/>
+  <lot x="291" y="67" level="0" width="3" height="4" map="../tmx/tbx/35_38/35_38_0_bathroom_291_67.tbx"/>
+  <lot x="291" y="63" level="0" width="3" height="4" map="../tmx/tbx/35_38/35_38_0_bathroom_291_63.tbx"/>
+  <lot x="288" y="69" level="0" width="3" height="2" map="../tmx/tbx/35_38/35_38_0_bathroom_288_69.tbx"/>
+  <lot x="276" y="66" level="0" width="8" height="5" map="../tmx/tbx/35_38/35_38_0_electronicstorage_284_66.tbx"/>
+  <lot x="284" y="69" level="0" width="4" height="2" map="../tmx/tbx/35_38/35_38_0_electronicstorage_284_69.tbx"/>
+  <lot x="276" y="59" level="1" width="18" height="8" map="../tmx/tbx/35_38/35_38_1_Electrician_273_56.tbx"/>
+  <lot x="276" y="67" level="1" width="3" height="4" map="../tmx/tbx/35_38/35_38_1_Electrician_273_64.tbx"/>
+  <lot x="285" y="67" level="1" width="9" height="4" map="../tmx/tbx/35_38/35_38_1_Electrician_282_64.tbx"/>
+  <lot x="279" y="67" level="1" width="3" height="4" map="../tmx/tbx/35_38/35_38_1_bathroom_276_64.tbx"/>
+  <lot x="282" y="67" level="1" width="3" height="4" map="../tmx/tbx/35_38/35_38_1_bathroom_279_64.tbx"/>
+  <lot x="270" y="14" level="0" width="3" height="5" map="../tmx/tbx/35_38/35_38_0_bathroom_270_14.tbx"/>
+  <lot x="273" y="14" level="0" width="3" height="5" map="../tmx/tbx/35_38/35_38_0_bathroom_273_14.tbx"/>
+  <lot x="276" y="14" level="0" width="3" height="2" map="../tmx/tbx/35_38/35_38_0_bathroom_276_14.tbx"/>
+  <lot x="276" y="16" level="0" width="6" height="3" map="../tmx/tbx/35_38/35_38_0_office_276_16.tbx"/>
+  <lot x="270" y="19" level="0" width="12" height="7" map="../tmx/tbx/35_38/35_38_0_restaurant_270_19.tbx"/>
+  <lot x="282" y="20" level="0" width="18" height="6" map="../tmx/tbx/35_38/35_38_0_restaurant_282_20.tbx"/>
+  <lot x="292" y="14" level="0" width="8" height="6" map="../tmx/tbx/35_38/35_38_0_restaurant_292_14.tbx"/>
+  <lot x="282" y="16" level="0" width="6" height="4" map="../tmx/tbx/35_38/35_38_0_dinerkitchen_282_16.tbx"/>
+  <lot x="288" y="14" level="0" width="4" height="4" map="../tmx/tbx/35_38/35_38_0_dinerkitchen_288_14.tbx"/>
+  <lot x="288" y="18" level="0" width="4" height="2" map="../tmx/tbx/35_38/35_38_0_dinerkitchen_288_18.tbx"/>
+  <lot x="279" y="14" level="0" width="9" height="2" map="../tmx/tbx/35_38/35_38_0_dinerkitchen_279_14.tbx"/>
+  <lot x="207" y="102" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_09.tbx"/>
+  <lot x="123" y="7" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_54.tbx"/>
+  <lot x="147" y="14" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_55.tbx"/>
+  <lot x="179" y="13" level="0" width="17" height="23" map="../../../TileZed/sagewood_futura_bldgs/futura_block_56.tbx"/>
+  <lot x="217" y="262" level="0" width="9" height="21" map="../../../TileZed/sagewood_bldgs/the_new_yorker.tbx"/>
+  <lot x="246" y="22" level="0" width="8" height="2" map="../tmx/tbx/35_38/35_38_0_gardenstore_246_22.tbx"/>
+  <lot x="246" y="24" level="0" width="14" height="11" map="../tmx/tbx/35_38/35_38_0_gardenstore_246_24.tbx"/>
+  <lot x="254" y="20" level="0" width="6" height="4" map="../tmx/tbx/35_38/35_38_0_gardenstore_254_20.tbx"/>
+  <lot x="228" y="19" level="0" width="2" height="5" map="../tmx/tbx/35_38/35_38_0_medical_228_19.tbx"/>
+  <lot x="230" y="19" level="0" width="2" height="5" map="../tmx/tbx/35_38/35_38_0_medical_230_19.tbx"/>
+  <lot x="232" y="19" level="0" width="2" height="5" map="../tmx/tbx/35_38/35_38_0_medical_232_19.tbx"/>
+  <lot x="204" y="21" level="0" width="5" height="14" map="../tmx/tbx/35_38/35_38_0_movierental_204_21.tbx"/>
+  <lot x="209" y="30" level="0" width="7" height="5" map="../tmx/tbx/35_38/35_38_0_movierental_209_30.tbx"/>
+  <lot x="216" y="21" level="0" width="5" height="14" map="../tmx/tbx/35_38/35_38_0_movierental_216_21.tbx"/>
+  <lot x="209" y="21" level="0" width="7" height="9" map="../tmx/tbx/35_38/35_38_0_officestorage_209_21.tbx"/>
+  <lot x="225" y="27" level="0" width="3" height="8" map="../tmx/tbx/35_38/35_38_0_hall_225_27.tbx"/>
+  <lot x="228" y="24" level="0" width="15" height="11" map="../tmx/tbx/35_38/35_38_0_pharmacy_228_24.tbx"/>
+  <lot x="234" y="19" level="0" width="9" height="5" map="../tmx/tbx/35_38/35_38_0_pharmacystorage_234_19.tbx"/>
+  <lot x="106" y="177" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_177.tbx"/>
+  <lot x="106" y="164" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_164.tbx"/>
+  <lot x="106" y="151" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_151.tbx"/>
+  <lot x="106" y="138" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_138.tbx"/>
+  <lot x="106" y="125" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_125.tbx"/>
+  <lot x="106" y="99" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_99.tbx"/>
+  <lot x="106" y="86" level="0" width="21" height="13" map="../tmx/tbx/35_38/buildings/35_38_house_106_86.tbx"/>
+  <object group="Nav" type="Nav" x="128" y="228" level="0" width="173" height="10"/>
   <object group="Nav" type="Nav" x="85" y="0" level="0" width="14" height="300"/>
   <object type="SpawnPoint" x="298" y="232" level="0" width="1" height="1"/>
   <object type="SpawnPoint" x="108" y="224" level="0" width="1" height="1">
@@ -193,6 +323,256 @@
   <object type="SpawnPoint" x="138" y="284" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
   </object>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="99,289 99,276 100,276 111,254 124,241 128,239 128,238 141,238 127,245 115,257"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="154,238 160,238 160,286 208,286 208,238 214,238 214,286 273,286 273,263 299,263 300,263 300,269 279,269 279,292 154,292"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="300,141 300,135 203,135 203,48 197,48 197,228 203,228 203,141"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="300,79 300,73 269,73 269,48 263,48 263,80 269,80 269,79"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="300,38 300,48 134,48 134,228 128,228 128,37 114,30 101,17 100,15 99,15 99,3 106,17 115,26 139,38"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="269,13 300,13 300,7 139,7 139,38 145,38 145,13 170,13 170,38 176,38 176,13 263,13 263,38 269,38"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="133" y="10" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="145" y="17" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="176" y="17" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="290" y="31" level="0" width="9" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="271" y="31" level="0" width="9" height="4">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="271" y="50" level="0" width="9" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="290" y="50" level="0" width="9" height="4">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="271" y="73" level="0" width="30" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="288" y="38" level="0" width="12" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="273" y="38" level="0" width="9" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="190" y="59" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="190" y="54" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="190" y="118" level="0" width="4" height="9">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="190" y="155" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="192" y="150" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="190" y="182" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="190" y="187" level="0" width="8" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="122" y="197" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="187" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="182" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="155" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="150" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="123" level="0" width="6" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="118" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="137" y="268" level="0" width="15" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="149" y="279" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="141" y="228" level="0" width="12" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="161" y="235" level="0" width="45" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="122" y="182" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="122" y="79" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="123" y="65" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="120" y="55" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="54" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="59" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="86" level="0" width="6" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="135" y="91" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="120" y="120" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="122" y="178" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="161" y="258" level="0" width="4" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="161" y="253" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="201" y="258" level="0" width="6" height="3">
+   <template name="ParkingStallE"/>
+  </object>
+  <object group="Vegitation" type="Vegitation" x="215" y="239" level="0" width="84" height="3"/>
+  <object group="Vegitation" type="Vegitation" x="289" y="242" level="0" width="10" height="3"/>
+  <object group="Vegitation" type="Vegitation" x="291" y="244" level="0" width="8" height="5"/>
+  <object group="Vegitation" type="Vegitation" x="267" y="257" level="0" width="31" height="6"/>
+  <object group="Vegitation" type="Vegitation" x="238" y="262" level="0" width="34" height="8"/>
+  <object group="Vegitation" type="Vegitation" x="239" y="270" level="0" width="7" height="15"/>
+  <object group="Vegitation" type="Vegitation" x="246" y="272" level="0" width="1" height="13"/>
+  <object group="Vegitation" type="Vegitation" x="214" y="283" level="0" width="25" height="2"/>
+  <object group="Vegitation" type="Vegitation" x="226" y="259" level="0" width="4" height="24"/>
+  <object group="Vegitation" type="Vegitation" x="224" y="258" level="0" width="3" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="215" y="257" level="0" width="10" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="215" y="242" level="0" width="2" height="41"/>
+  <object group="Vegitation" type="Vegitation" x="280" y="270" level="0" width="20" height="30"/>
+  <object group="Vegitation" type="Vegitation" x="153" y="293" level="0" width="127" height="7"/>
+  <object group="Vegitation" type="Vegitation" x="151" y="284" level="0" width="2" height="16"/>
+  <object group="Vegitation" type="Vegitation" x="149" y="274" level="0" width="4" height="5"/>
+  <object group="Vegitation" type="Vegitation" x="132" y="274" level="0" width="17" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="129" y="274" level="0" width="8" height="26"/>
+  <object group="Vegitation" type="Vegitation" x="137" y="296" level="0" width="5" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="142" y="298" level="0" width="9" height="2"/>
+  <object group="Vegitation" type="Vegitation" x="143" y="296" level="0" width="7" height="1"/>
+  <object group="Vegitation" type="Vegitation" x="149" y="284" level="0" width="1" height="12"/>
+  <object group="Vegitation" type="Vegitation" x="149" y="282" level="0" width="4" height="1"/>
+  <object group="Vegitation" type="Vegitation" x="161" y="239" level="0" width="22" height="9"/>
+  <object group="Vegitation" type="Vegitation" x="183" y="239" level="0" width="24" height="9"/>
+  <object group="Vegitation" type="Vegitation" x="197" y="14" level="0" width="65" height="3"/>
+  <object group="Vegitation" type="Vegitation" x="197" y="17" level="0" width="26" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="198" y="21" level="0" width="6" height="14"/>
+  <object group="Vegitation" type="Vegitation" x="290" y="81" level="0" width="9" height="52"/>
+  <object group="Vegitation" type="Vegitation" x="204" y="98" level="0" width="87" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="203" y="128" level="0" width="97" height="6"/>
+  <object group="Vegitation" type="Vegitation" x="204" y="98" level="0" width="4" height="33"/>
+  <object group="Forest" type="Forest" x="217" y="242" level="0" width="72" height="15"/>
+  <object group="Forest" type="Forest" x="289" y="245" level="0" width="2" height="12"/>
+  <object group="Forest" type="Forest" x="291" y="249" level="0" width="8" height="8"/>
+  <object group="Forest" type="Forest" x="298" y="257" level="0" width="1" height="5"/>
+  <object group="Forest" type="Forest" x="230" y="257" level="0" width="37" height="5"/>
+  <object group="Forest" type="Forest" x="227" y="257" level="0" width="3" height="2"/>
+  <object group="Forest" type="Forest" x="225" y="257" level="0" width="2" height="1"/>
+  <object group="Forest" type="Forest" x="230" y="262" level="0" width="8" height="21"/>
+  <object group="Forest" type="Forest" x="238" y="270" level="0" width="1" height="13"/>
+  <object group="Forest" type="Forest" x="184" y="276" level="0" width="21" height="9"/>
+  <object group="Forest" type="Forest" x="162" y="276" level="0" width="19" height="9"/>
+  <object group="Forest" type="Forest" x="166" y="212" level="0" width="29" height="14"/>
+  <object group="Forest" type="Forest" x="136" y="211" level="0" width="28" height="15"/>
+  <object group="Forest" type="Forest" x="244" y="189" level="0" width="50" height="36"/>
+  <object group="Forest" type="Forest" x="237" y="175" level="0" width="40" height="17"/>
+  <object group="Forest" type="Forest" x="236" y="174" level="0" width="8" height="2"/>
+  <object group="Forest" type="Forest" x="222" y="49" level="0" width="40" height="34"/>
+  <object group="Forest" type="Forest" x="223" y="80" level="0" width="66" height="14"/>
+  <object group="Forest" type="Forest" x="215" y="83" level="0" width="9" height="11"/>
+  <object group="Forest" type="Forest" x="204" y="83" level="0" width="9" height="10"/>
+  <object group="Forest" type="Forest" x="103" y="3" level="0" width="196" height="3"/>
+  <object group="Forest" type="Forest" x="103" y="7" level="0" width="19" height="4"/>
+  <object group="Forest" type="Forest" x="102" y="6" level="0" width="20" height="2"/>
+  <object group="Forest" type="Forest" x="102" y="1" level="0" width="1" height="5"/>
+  <object group="Forest" type="Forest" x="101" y="1" level="0" width="140" height="2"/>
+  <object group="Forest" type="Forest" x="106" y="10" level="0" width="16" height="6"/>
+  <object group="Forest" type="Forest" x="108" y="15" level="0" width="14" height="4"/>
+  <object group="Forest" type="Forest" x="112" y="19" level="0" width="10" height="3"/>
+  <object group="Forest" type="Forest" x="115" y="22" level="0" width="8" height="4"/>
+  <object group="Forest" type="Forest" x="118" y="26" level="0" width="5" height="1"/>
+  <object group="Forest" type="Forest" x="121" y="27" level="0" width="2" height="2"/>
+  <object group="Forest" type="Forest" x="120" y="27" level="0" width="1" height="1"/>
+  <object group="Forest" type="Forest" x="131" y="30" level="0" width="6" height="3"/>
+  <object group="Forest" type="Forest" x="102" y="22" level="0" width="3" height="5"/>
+  <object group="Forest" type="Forest" x="105" y="25" level="0" width="4" height="7"/>
+  <object group="Forest" type="Forest" x="104" y="36" level="0" width="20" height="6"/>
+  <object group="Forest" type="Forest" x="107" y="42" level="0" width="16" height="1"/>
+  <object group="Forest" type="Forest" x="103" y="31" level="0" width="10" height="4"/>
+  <object group="Forest" type="Forest" x="104" y="26" level="0" width="2" height="5"/>
+  <object group="Forest" type="Forest" x="102" y="33" level="0" width="4" height="177"/>
+  <object group="Forest" type="Forest" x="101" y="209" level="0" width="4" height="53"/>
+  <object group="Forest" type="Forest" x="104" y="228" level="0" width="22" height="11"/>
+  <object group="Forest" type="Forest" x="105" y="239" level="0" width="14" height="5"/>
+  <object group="Forest" type="Forest" x="105" y="244" level="0" width="11" height="3"/>
+  <object group="Forest" type="Forest" x="104" y="246" level="0" width="9" height="3"/>
+  <object group="Forest" type="Forest" x="104" y="249" level="0" width="6" height="4"/>
+  <object group="Forest" type="Forest" x="104" y="253" level="0" width="4" height="2"/>
+  <object group="Forest" type="Forest" x="100" y="288" level="0" width="29" height="10"/>
+  <object group="Forest" type="Forest" x="105" y="282" level="0" width="24" height="6"/>
+  <object group="Forest" type="Forest" x="108" y="280" level="0" width="19" height="1"/>
+  <object group="Forest" type="Forest" x="120" y="255" level="0" width="8" height="12"/>
+  <object group="Forest" type="Forest" x="123" y="263" level="0" width="7" height="8"/>
+  <object group="Forest" type="Forest" x="118" y="259" level="0" width="6" height="18"/>
+  <object group="Forest" type="Forest" x="115" y="261" level="0" width="5" height="7"/>
+  <object group="Forest" type="Forest" x="112" y="268" level="0" width="9" height="7"/>
+  <object group="Forest" type="Forest" x="111" y="271" level="0" width="3" height="2"/>
+  <object group="Forest" type="Forest" x="109" y="273" level="0" width="5" height="10"/>
+  <object group="Forest" type="Forest" x="114" y="275" level="0" width="12" height="5"/>
+  <object group="Forest" type="Forest" x="65" y="51" level="0" width="18" height="248"/>
+  <object group="Forest" type="Forest" x="43" y="1" level="0" width="40" height="14"/>
+  <object group="Forest" type="Forest" x="53" y="15" level="0" width="29" height="16"/>
+  <object group="Forest" type="Forest" x="60" y="31" level="0" width="20" height="18"/>
+  <object group="Forest" type="Forest" x="60" y="49" level="0" width="4" height="12"/>
+  <object group="Forest" type="Forest" x="52" y="30" level="0" width="9" height="10"/>
+  <object group="Forest" type="Forest" x="44" y="14" level="0" width="9" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="-1" y="-1" level="0" width="43" height="294"/>
+  <object group="DeepForest" type="DeepForest" x="42" y="61" level="0" width="23" height="239"/>
+  <object group="DeepForest" type="DeepForest" x="42" y="40" level="0" width="18" height="21"/>
+  <object group="DeepForest" type="DeepForest" x="41" y="25" level="0" width="10" height="14"/>
+  <object group="TownZone" type="TownZone" x="246" y="271" level="0" width="26" height="14"/>
+  <object group="TownZone" type="TownZone" x="216" y="259" level="0" width="10" height="23"/>
+  <object group="TownZone" type="TownZone" x="205" y="194" level="0" width="38" height="33"/>
+  <object group="TownZone" type="TownZone" x="203" y="164" level="0" width="34" height="29"/>
+  <object group="TownZone" type="TownZone" x="205" y="142" level="0" width="91" height="32"/>
+  <object group="TownZone" type="TownZone" x="278" y="172" level="0" width="20" height="16"/>
+  <object group="TownZone" type="TownZone" x="207" y="102" level="0" width="82" height="25"/>
+  <object group="TownZone" type="TownZone" x="204" y="49" level="0" width="17" height="33"/>
+  <object group="TownZone" type="TownZone" x="263" y="-1" level="0" width="44" height="80"/>
+  <object group="TownZone" type="TownZone" x="138" y="6" level="0" width="125" height="42"/>
+  <object group="TownZone" type="TownZone" x="121" y="6" level="0" width="17" height="22"/>
+  <object group="TownZone" type="TownZone" x="134" y="48" level="0" width="61" height="164"/>
+  <object group="TownZone" type="TownZone" x="106" y="43" level="0" width="21" height="185"/>
+  <object group="TownZone" type="TownZone" x="140" y="239" level="0" width="13" height="34"/>
+  <object group="TownZone" type="TownZone" x="132" y="242" level="0" width="8" height="31"/>
+  <object group="TownZone" type="TownZone" x="127" y="245" level="0" width="4" height="21"/>
+  <object group="TownZone" type="TownZone" x="135" y="241" level="0" width="7" height="1"/>
+  <object group="TownZone" type="TownZone" x="161" y="248" level="0" width="21" height="28"/>
+  <object group="TownZone" type="TownZone" x="183" y="248" level="0" width="23" height="27"/>
+  <object group="TownZone" type="TownZone" x="136" y="277" level="0" width="13" height="19"/>
  </cell>
  <cell x="1" y="1" map="../tmx/36_38.tmx">
   <template name="ParkingStallW"/>
@@ -476,5 +856,120 @@
    <template name="ParkingStallS"/>
   </object>
   <object x="-31" y="70" level="0" width="1" height="2"/>
+ </cell>
+ <cell x="2" y="1" map="../tmx/East_River_Expansion_37_38.tmx">
+  <object group="TownZone" type="TownZone" x="-1" y="0" level="0" width="11" height="272"/>
+  <object group="TownZone" type="TownZone" x="9" y="0" level="0" width="7" height="45"/>
+  <object group="TownZone" type="TownZone" x="9" y="81" level="0" width="12" height="73"/>
+  <object group="TownZone" type="TownZone" x="10" y="215" level="0" width="6" height="57"/>
+  <object group="Forest" type="Forest" x="-1" y="288" level="0" width="12" height="13"/>
+  <object group="Forest" type="Forest" x="-1" y="271" level="0" width="16" height="5"/>
+  <object group="Forest" type="Forest" x="1" y="272" level="0" width="17" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="12" y="296" level="0" width="212" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="11" y="292" level="0" width="38" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="21" y="287" level="0" width="15" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="51" y="290" level="0" width="90" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="86" y="287" level="0" width="31" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="177" y="288" level="0" width="48" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="192" y="278" level="0" width="5" height="10"/>
+  <object group="DeepForest" type="DeepForest" x="224" y="281" level="0" width="84" height="21"/>
+  <object group="DeepForest" type="DeepForest" x="218" y="265" level="0" width="32" height="15"/>
+  <object group="DeepForest" type="DeepForest" x="35" y="236" level="0" width="182" height="38"/>
+  <object group="DeepForest" type="DeepForest" x="31" y="240" level="0" width="5" height="29"/>
+  <object group="DeepForest" type="DeepForest" x="28" y="242" level="0" width="4" height="22"/>
+  <object group="DeepForest" type="DeepForest" x="44" y="274" level="0" width="29" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="90" y="231" level="0" width="98" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="105" y="225" level="0" width="75" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="122" y="218" level="0" width="46" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="118" y="274" level="0" width="77" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="127" y="277" level="0" width="64" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="136" y="280" level="0" width="41" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="219" y="221" level="0" width="81" height="43"/>
+  <object group="DeepForest" type="DeepForest" x="263" y="265" level="0" width="48" height="15"/>
+  <object group="DeepForest" type="DeepForest" x="197" y="225" level="0" width="22" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="191" y="228" level="0" width="5" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="185" y="231" level="0" width="8" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="214" y="219" level="0" width="5" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="219" y="216" level="0" width="21" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="229" y="200" level="0" width="5" height="14"/>
+  <object group="DeepForest" type="DeepForest" x="226" y="199" level="0" width="3" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="230" y="197" level="0" width="75" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="242" y="204" level="0" width="68" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="256" y="206" level="0" width="45" height="13"/>
+  <object group="DeepForest" type="DeepForest" x="195" y="215" level="0" width="10" height="11"/>
+  <object group="DeepForest" type="DeepForest" x="186" y="213" level="0" width="8" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="182" y="201" level="0" width="24" height="14"/>
+  <object group="DeepForest" type="DeepForest" x="206" y="196" level="0" width="4" height="19"/>
+  <object group="DeepForest" type="DeepForest" x="210" y="196" level="0" width="3" height="9"/>
+  <object group="DeepForest" type="DeepForest" x="209" y="194" level="0" width="14" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="209" y="198" level="0" width="23" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="156" y="194" level="0" width="49" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="178" y="200" level="0" width="6" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="172" y="200" level="0" width="5" height="9"/>
+  <object group="DeepForest" type="DeepForest" x="168" y="199" level="0" width="2" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="35" y="155" level="0" width="121" height="46"/>
+  <object group="DeepForest" type="DeepForest" x="38" y="201" level="0" width="75" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="41" y="206" level="0" width="65" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="48" y="209" level="0" width="54" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="52" y="215" level="0" width="35" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="156" y="156" level="0" width="144" height="40"/>
+  <object group="DeepForest" type="DeepForest" x="41" y="84" level="0" width="199" height="69"/>
+  <object group="DeepForest" type="DeepForest" x="90" y="31" level="0" width="51" height="54"/>
+  <object group="DeepForest" type="DeepForest" x="66" y="59" level="0" width="22" height="24"/>
+  <object group="DeepForest" type="DeepForest" x="78" y="44" level="0" width="9" height="14"/>
+  <object group="DeepForest" type="DeepForest" x="84" y="36" level="0" width="4" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="71" y="51" level="0" width="5" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="75" y="47" level="0" width="2" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="67" y="54" level="0" width="3" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="53" y="72" level="0" width="13" height="10"/>
+  <object group="DeepForest" type="DeepForest" x="59" y="63" level="0" width="6" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="47" y="77" level="0" width="5" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="56" y="67" level="0" width="4" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="63" y="59" level="0" width="2" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="96" y="14" level="0" width="20" height="16"/>
+  <object group="DeepForest" type="DeepForest" x="100" y="6" level="0" width="14" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="105" y="0" level="0" width="8" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="91" y="24" level="0" width="5" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="116" y="27" level="0" width="10" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="116" y="24" level="0" width="6" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="117" y="19" level="0" width="2" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="142" y="49" level="0" width="75" height="33"/>
+  <object group="DeepForest" type="DeepForest" x="143" y="40" level="0" width="10" height="9"/>
+  <object group="DeepForest" type="DeepForest" x="140" y="36" level="0" width="10" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="151" y="44" level="0" width="66" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="190" y="39" level="0" width="26" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="216" y="57" level="0" width="6" height="27"/>
+  <object group="DeepForest" type="DeepForest" x="223" y="76" level="0" width="15" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="225" y="73" level="0" width="10" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="238" y="82" level="0" width="12" height="38"/>
+  <object group="DeepForest" type="DeepForest" x="241" y="119" level="0" width="9" height="39"/>
+  <object group="DeepForest" type="DeepForest" x="252" y="122" level="0" width="51" height="37"/>
+  <object group="DeepForest" type="DeepForest" x="265" y="109" level="0" width="40" height="14"/>
+  <object group="DeepForest" type="DeepForest" x="267" y="99" level="0" width="45" height="11"/>
+  <object group="DeepForest" type="DeepForest" x="272" y="92" level="0" width="25" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="266" y="0" level="0" width="32" height="91"/>
+  <object group="DeepForest" type="DeepForest" x="258" y="0" level="0" width="7" height="87"/>
+  <object group="DeepForest" type="DeepForest" x="249" y="-1" level="0" width="7" height="74"/>
+  <object group="DeepForest" type="DeepForest" x="240" y="0" level="0" width="9" height="63"/>
+  <object group="DeepForest" type="DeepForest" x="150" y="-2" level="0" width="89" height="16"/>
+  <object group="DeepForest" type="DeepForest" x="146" y="-1" level="0" width="3" height="13"/>
+  <object group="DeepForest" type="DeepForest" x="141" y="-1" level="0" width="5" height="8"/>
+  <object group="DeepForest" type="DeepForest" x="155" y="15" level="0" width="87" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="235" y="18" level="0" width="3" height="11"/>
+  <object group="DeepForest" type="DeepForest" x="232" y="21" level="0" width="2" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="164" y="21" level="0" width="33" height="2"/>
+  <object group="DeepForest" type="DeepForest" x="166" y="23" level="0" width="27" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="33" y="-1" level="0" width="41" height="4"/>
+  <object group="DeepForest" type="DeepForest" x="36" y="3" level="0" width="36" height="5"/>
+  <object group="DeepForest" type="DeepForest" x="35" y="7" level="0" width="32" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="38" y="14" level="0" width="24" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="35" y="16" level="0" width="4" height="24"/>
+  <object group="DeepForest" type="DeepForest" x="32" y="40" level="0" width="4" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="38" y="15" level="0" width="6" height="23"/>
+  <object group="DeepForest" type="DeepForest" x="44" y="13" level="0" width="3" height="17"/>
+  <object group="DeepForest" type="DeepForest" x="48" y="15" level="0" width="3" height="12"/>
+  <object group="DeepForest" type="DeepForest" x="52" y="17" level="0" width="2" height="6"/>
+  <object group="DeepForest" type="DeepForest" x="54" y="18" level="0" width="3" height="3"/>
+  <object group="DeepForest" type="DeepForest" x="57" y="17" level="0" width="4" height="3"/>
  </cell>
 </world>

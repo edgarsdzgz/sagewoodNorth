@@ -354,6 +354,8 @@
   </object>
  </cell>
  <cell x="2" y="0" map="../tmx/East_River_Expansion_37_37.tmx">
+  <property name="WaterDirection" value="190"/>
+  <property name="WaterSpeed" value=".23"/>
   <object group="DeepForest" type="DeepForest" x="-2" y="-2" level="0" width="304" height="69"/>
   <object group="DeepForest" type="DeepForest" x="3" y="67" level="0" width="156" height="6"/>
   <object group="DeepForest" type="DeepForest" x="4" y="73" level="0" width="30" height="23"/>
@@ -503,6 +505,90 @@
   <object name="East river lake d3-6" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="224,112 200,112 200,113 201,114 202,114 202,115 203,115 203,116 203,117 204,116 205,117 216,117 215,116 216,116 217,116 218,115 219,116 220,115 221,115 221,114 223,114 224,114">
    <property name="WaterDirection" value="180"/>
    <property name="WaterSpeed" value=".22"/>
+  </object>
+  <object name="East river lake d3-1" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="199,112 199,115 200,116 201,117 202,118 204,120 205,120 205,121 206,122 207,122 208,123 209,123 209,124 210,125 211,125 211,126 212,127 212,129 211,130 211,131 208,134 207,134 206,135 206,136 204,138 203,139 203,140 202,141 202,142 201,143 201,144 200,144 203,147 146,147 145,146 144,145 142,145 141,146 138,146 137,147 136,147 135,146 134,146 134,143 141,136 141,134 140,133 139,132 138,131 138,112">
+   <property name="WaterSpeed" value=".1"/>
+   <property name="WaterDirection" value="180"/>
+  </object>
+  <object name="East river lake e1" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="211,176 204,160 206,162 207,162 208,163 209,163 210,164 212,164 213,163 214,162 214,161 215,160 215,159 216,158 217,157 219,155 220,155 221,154 223,154 223,155 224,156 224,157 226,159 227,160 228,161 229,161 230,162 231,163 231,162 231,160 233,158 234,158 235,159 235,160 240,165 240,166 242,168 242,170 243,171 243,175 241,177 239,177 238,178 236,178 235,179 231,179 230,180 228,180 225,177 224,177 221,174 220,173 219,173 218,172 216,172 215,171 213,173 212,174 212,176">
+   <property name="WaterDirection" value="270"/>
+   <property name="WaterSpeed" value=".2"/>
+  </object>
+  <object name="East river lake e2" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="184,192 211,180 212,181 212,182 214,184 215,185 215,186 216,187 217,188 220,191 220,196 219,197 219,198 218,199 218,200 217,201 217,202 216,203 216,204 212,207 211,209 210,209 208,211 203,211">
+   <property name="WaterDirection" value="320"/>
+   <property name="WaterSpeed" value=".18"/>
+  </object>
+  <object name="East river lake e3" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="169,199 159,205 167,205 171,209 171,210 172,211 172,213 174,215 174,216 175,217 175,218 176,219 176,220 177,221 177,222 178,223 178,224 179,225 179,226 180,227 180,228 181,229 181,230 182,231 182,233 183,233 185,231 186,231 186,230 188,228 189,228 190,227 190,225 191,224 191,213 188,210 187,210 186,209 185,209 184,208 183,208 182,207 180,207 179,206 177,206 176,205 175,205 174,204 173,204 170,201 170,200">
+   <property name="WaterDirection" value="315"/>
+   <property name="WaterSpeed" value=".2"/>
+  </object>
+  <object name="East river lake d4" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="146,147 203,147 207,151 207,152 210,155 210,158 206,158 204,160">
+   <property name="WaterDirection" value="200"/>
+   <property name="WaterSpeed" value=".2"/>
+  </object>
+  <object name="East river lake d5" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="146,147 204,160 211,176 144,151 144,150 145,149 145,148">
+   <property name="WaterSpeed" value=".22"/>
+   <property name="WaterDirection" value="220"/>
+  </object>
+  <object name="East river lake d6" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="144,151 211,176 211,180 184,192">
+   <property name="WaterDirection" value="225"/>
+   <property name="WaterSpeed" value=".23"/>
+  </object>
+  <object name="East river lake d7" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="144,151 184,192 183,193 181,193 180,194 179,194 178,195 175,195 174,196 173,196 170,199 169,199 159,205 128,165 129,165 141,154">
+   <property name="WaterDirection" value="225"/>
+   <property name="WaterSpeed" value=".2"/>
+  </object>
+  <object name="East river lake e4" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="128,165 128,164 128,163 127,162 127,160 126,159 126,155 125,154 125,153 128,153 130,151 131,151 134,154 141,154 129,165">
+   <property name="WaterDirection" value="200"/>
+   <property name="WaterSpeed" value=".15"/>
+  </object>
+  <object name="East river lake d8" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="129,197 128,165 159,205 158,206 155,206 154,207 151,207 150,208 141,208 141,207 140,206 139,206 137,204 136,204 135,203 134,203 133,202 133,200 130,197">
+   <property name="WaterDirection" value="270"/>
+   <property name="WaterSpeed" value=".23"/>
+  </object>
+  <object name="East river lake d9" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="114,219 99,195 98,194 97,192 124,165 128,165 129,197 124,202 123,202 120,205 121,206 121,211 119,213 119,214">
+   <property name="WaterDirection" value="225"/>
+   <property name="WaterSpeed" value=".18"/>
+  </object>
+  <object name="East river lake b6" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="82,207 97,192 98,194 99,195 114,219 115,220 115,222 116,223 116,224 117,225 117,227 118,228 118,230 119,231 119,232 120,233 93,228 92,227 92,225 91,224 91,223 89,221 89,219 88,218 88,217 86,215 86,214 85,213 85,211 84,210 83,210 83,209 82,208">
+   <property name="WaterDirection" value="190"/>
+   <property name="WaterSpeed" value=".23"/>
+  </object>
+  <object name="East river b7" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="93,228 120,233 120,239 121,240 121,257 97,243 96,242 96,239 95,238 95,235 94,234 94,231 93,230">
+   <property name="WaterDirection" value="215"/>
+   <property name="WaterSpeed" value=".24"/>
+  </object>
+  <object name="East river b8" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="96,261 100,265 104,268 110,268 117,267 122,263 122,258 121,257 97,243 97,257 96,258">
+   <property name="WaterDirection" value="180"/>
+   <property name="WaterSpeed" value=".24"/>
+  </object>
+  <object name="East river b9" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="108,291 110,285 110,278 109,272 111,268 104,268 100,265 98,263 96,261 95,262 95,264 94,265 94,267 93,268 93,270 92,271 92,272 91,273 91,274 90,275 90,276 89,277 89,279 88,280 88,281 86,283 86,284 85,285 85,286 84,287 84,288 83,289 83,290 82,291 82,292 80,294 80,295 79,296 79,297 77,299 77,300 104,300 105,299 105,298 106,297 106,296 107,295 107,294 108,293">
+   <property name="WaterDirection" value="200"/>
+   <property name="WaterSpeed" value=".26"/>
+  </object>
+  <object name="East river f1" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="111,268 109,272 110,278 110,285 108,291 111,294 111,295 112,296 112,297 113,298 113,299 114,300 137,300 137,298 136,297 136,290 135,289 135,286 134,285 134,284 133,283 133,282 131,280 131,279 129,277 129,276 127,274 127,272 125,270 125,269 124,268 124,266 123,265 123,264 122,263 117,267">
+   <property name="WaterSpeed" value=".26"/>
+   <property name="WaterDirection" value="165"/>
+  </object>
+  <object name="East river south c11" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="1,295 1,270 13,270 6,296 5,296 4,295 3,295">
+   <property name="WaterDirection" value="90"/>
+   <property name="WaterSpeed" value=".23"/>
+  </object>
+  <object name="East river south c12" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="6,296 13,270 14,271 15,271 16,272 18,272 19,273">
+   <property name="WaterDirection" value="115"/>
+   <property name="WaterSpeed" value=".25"/>
+  </object>
+  <object name="East river south c13" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="25,279 6,296 19,273 20,273 20,274 23,277 24,277 25,278">
+   <property name="WaterDirection" value="160"/>
+   <property name="WaterSpeed" value=".27"/>
+  </object>
+  <object name="East river south c14-1" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="6,296 25,279 30,284 30,285 31,286 31,292 32,293 32,295 33,296 33,298 34,299 34,300 10,300 10,292 23,281 24,280">
+   <property name="WaterDirection" value="180"/>
+   <property name="WaterSpeed" value=".3"/>
+  </object>
+  <object name="East river south c14-2" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="6,296 10,292 10,300">
+   <property name="WaterDirection" value="95"/>
+   <property name="WaterSpeed" value=".25"/>
   </object>
  </cell>
  <cell x="0" y="1" map="../tmx/35_38.tmx">
@@ -1327,5 +1413,33 @@
   <object group="DeepForest" type="DeepForest" x="52" y="17" level="0" width="2" height="6"/>
   <object group="DeepForest" type="DeepForest" x="54" y="18" level="0" width="3" height="3"/>
   <object group="DeepForest" type="DeepForest" x="57" y="17" level="0" width="4" height="3"/>
+  <object name="East river f2" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="114,0 114,2 115,3 115,9 116,10 116,14 117,15 128,10 139,4 139,3 137,1 137,0">
+   <property name="WaterDirection" value="145"/>
+   <property name="WaterSpeed" value=".3"/>
+  </object>
+  <object name="East river f3" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="139,4 128,10 117,15 117,17 120,20 120,21 121,22 121,23 127,29 127,30 128,30 129,31 141,7 141,6">
+   <property name="WaterDirection" value="115"/>
+   <property name="WaterSpeed" value=".29"/>
+  </object>
+  <object name="East river f4" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="129,31 141,7 145,11 145,12 147,14 140,31">
+   <property name="WaterDirection" value="125"/>
+   <property name="WaterSpeed" value=".28"/>
+  </object>
+  <object name="East river f5" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="140,31 147,14 148,14 150,16 151,16 153,18 154,18 156,20 157,20 158,21 159,21 155,41 154,41 153,40 152,40 150,38 149,38 147,36 146,36 143,33 142,33">
+   <property name="WaterDirection" value="120"/>
+   <property name="WaterSpeed" value=".3"/>
+  </object>
+  <object name="East river f6" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="159,21 155,41 156,42 158,42 159,43 160,43 161,44 162,44 163,45 166,45 165,25 164,24 163,24 162,23 161,23">
+   <property name="WaterDirection" value="115"/>
+   <property name="WaterSpeed" value=".3"/>
+  </object>
+  <object name="East river f7" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="166,45 165,25 166,25 167,26 169,26 171,28 168,46 167,46">
+   <property name="WaterDirection" value="100"/>
+   <property name="WaterSpeed" value=".3"/>
+  </object>
+  <object name="East river f8" group="WaterFlow" type="WaterFlow" level="0" geometry="polygon" points="171,28 173,28 174,29 183,29 183,45 182,45 181,46 168,46 169,40">
+   <property name="WaterDirection" value="90"/>
+   <property name="WaterSpeed" value=".31"/>
+  </object>
  </cell>
 </world>

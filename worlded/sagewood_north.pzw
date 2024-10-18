@@ -353,7 +353,7 @@
    <property name="WaterSpeed" value=".2"/>
   </object>
  </cell>
- <cell x="2" y="0" map="../tmx/East_River_Expansion_37_37.tmx">
+ <cell x="2" y="0" map="../tmx/37_37.tmx">
   <property name="WaterDirection" value="190"/>
   <property name="WaterSpeed" value=".23"/>
   <object group="DeepForest" type="DeepForest" x="-2" y="-2" level="0" width="304" height="69"/>
@@ -757,6 +757,8 @@
   <lot x="209" y="30" level="0" width="7" height="5" map="../tmx/tbx/35_38/rooms/35_38_0_movierental_209_30.tbx"/>
   <lot x="216" y="21" level="0" width="5" height="14" map="../tmx/tbx/35_38/rooms/35_38_0_movierental_216_21.tbx"/>
   <lot x="209" y="21" level="0" width="7" height="9" map="../tmx/tbx/35_38/rooms/35_38_0_officestorage_209_21.tbx"/>
+  <lot x="129" y="250" level="0" width="4" height="8" map="../tmx/tbx/35_38/rooms/35_38_0_gasstorage_129_250.tbx"/>
+  <lot x="133" y="244" level="0" width="8" height="14" map="../tmx/tbx/35_38/rooms/35_38_0_fossoil_133_244.tbx"/>
   <object group="Nav" type="Nav" x="128" y="228" level="0" width="173" height="10"/>
   <object group="Nav" type="Nav" x="85" y="0" level="0" width="14" height="300"/>
   <object type="SpawnPoint" x="298" y="232" level="0" width="1" height="1"/>
@@ -930,7 +932,7 @@
   <object group="Vegitation" type="Vegitation" x="197" y="17" level="0" width="26" height="4"/>
   <object group="Vegitation" type="Vegitation" x="198" y="21" level="0" width="6" height="14"/>
   <object group="Vegitation" type="Vegitation" x="290" y="81" level="0" width="9" height="52"/>
-  <object group="Vegitation" type="Vegitation" x="204" y="98" level="0" width="87" height="4"/>
+  <object group="Vegitation" type="Vegitation" x="204" y="94" level="0" width="87" height="8"/>
   <object group="Vegitation" type="Vegitation" x="203" y="128" level="0" width="97" height="6"/>
   <object group="Vegitation" type="Vegitation" x="204" y="98" level="0" width="4" height="33"/>
   <object group="Forest" type="Forest" x="217" y="242" level="0" width="72" height="15"/>
@@ -965,10 +967,10 @@
   <object group="Forest" type="Forest" x="118" y="26" level="0" width="5" height="1"/>
   <object group="Forest" type="Forest" x="121" y="27" level="0" width="2" height="2"/>
   <object group="Forest" type="Forest" x="120" y="27" level="0" width="1" height="1"/>
-  <object group="Forest" type="Forest" x="131" y="30" level="0" width="6" height="3"/>
+  <object group="Forest" type="Forest" x="121" y="28" level="0" width="17" height="15"/>
   <object group="Forest" type="Forest" x="102" y="22" level="0" width="3" height="5"/>
   <object group="Forest" type="Forest" x="105" y="25" level="0" width="4" height="7"/>
-  <object group="Forest" type="Forest" x="104" y="36" level="0" width="20" height="6"/>
+  <object group="Forest" type="Forest" x="101" y="11" level="0" width="20" height="32"/>
   <object group="Forest" type="Forest" x="107" y="42" level="0" width="16" height="1"/>
   <object group="Forest" type="Forest" x="103" y="31" level="0" width="10" height="4"/>
   <object group="Forest" type="Forest" x="104" y="26" level="0" width="2" height="5"/>
@@ -981,16 +983,16 @@
   <object group="Forest" type="Forest" x="104" y="249" level="0" width="6" height="4"/>
   <object group="Forest" type="Forest" x="104" y="253" level="0" width="4" height="2"/>
   <object group="Forest" type="Forest" x="100" y="288" level="0" width="29" height="10"/>
-  <object group="Forest" type="Forest" x="105" y="282" level="0" width="24" height="6"/>
+  <object group="Forest" type="Forest" x="103" y="282" level="0" width="26" height="6"/>
   <object group="Forest" type="Forest" x="108" y="280" level="0" width="19" height="1"/>
-  <object group="Forest" type="Forest" x="120" y="255" level="0" width="8" height="12"/>
+  <object group="Forest" type="Forest" x="101" y="229" level="0" width="26" height="72"/>
   <object group="Forest" type="Forest" x="123" y="263" level="0" width="7" height="8"/>
   <object group="Forest" type="Forest" x="118" y="259" level="0" width="6" height="18"/>
-  <object group="Forest" type="Forest" x="115" y="261" level="0" width="5" height="7"/>
+  <object group="Forest" type="Forest" x="113" y="261" level="0" width="5" height="7"/>
   <object group="Forest" type="Forest" x="112" y="268" level="0" width="9" height="7"/>
   <object group="Forest" type="Forest" x="111" y="271" level="0" width="3" height="2"/>
   <object group="Forest" type="Forest" x="109" y="273" level="0" width="5" height="10"/>
-  <object group="Forest" type="Forest" x="114" y="275" level="0" width="12" height="5"/>
+  <object group="Forest" type="Forest" x="109" y="271" level="0" width="20" height="12"/>
   <object group="Forest" type="Forest" x="65" y="51" level="0" width="18" height="248"/>
   <object group="Forest" type="Forest" x="43" y="1" level="0" width="40" height="14"/>
   <object group="Forest" type="Forest" x="53" y="15" level="0" width="29" height="16"/>
@@ -1299,7 +1301,7 @@
   </object>
   <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="90,69 94,69 94,64 91,61 91,52 90,52"/>
  </cell>
- <cell x="2" y="1" map="../tmx/East_River_Expansion_37_38.tmx">
+ <cell x="2" y="1" map="../tmx/37_38.tmx">
   <object group="TownZone" type="TownZone" x="-1" y="0" level="0" width="11" height="272"/>
   <object group="TownZone" type="TownZone" x="9" y="0" level="0" width="7" height="45"/>
   <object group="TownZone" type="TownZone" x="9" y="81" level="0" width="12" height="73"/>

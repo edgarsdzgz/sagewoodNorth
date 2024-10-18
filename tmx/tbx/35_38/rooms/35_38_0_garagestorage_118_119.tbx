@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <building version="3" width="6" height="3" ExteriorWall="0" ExteriorWallTrim="0" Door="0" DoorFrame="0" Window="0" Curtains="0" Shutters="0" Stairs="9" RoofCap="6" RoofSlope="7" RoofTop="8" GrimeWall="3">
+ <properties>
+  <property name="Legend" value="Residential"/>
+ </properties>
  <tile_entry category="exterior_walls">
   <tile enum="West" tile="carpentry_02_040"/>
   <tile enum="North" tile="carpentry_02_041"/>

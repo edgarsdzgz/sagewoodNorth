@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <building version="3" width="20" height="12" ExteriorWall="7" ExteriorWallTrim="0" Door="4" DoorFrame="1" Window="24" Curtains="0" Shutters="0" Stairs="23" RoofCap="20" RoofSlope="21" RoofTop="22" GrimeWall="0">
+=======
+<building version="3" width="20" height="12" ExteriorWall="3" ExteriorWallTrim="0" Door="2" DoorFrame="1" Window="20" Curtains="0" Shutters="0" Stairs="19" RoofCap="16" RoofSlope="17" RoofTop="18" GrimeWall="0">
+>>>>>>> Stashed changes
  <properties>
   <property name="Legend" value="Residential"/>
  </properties>

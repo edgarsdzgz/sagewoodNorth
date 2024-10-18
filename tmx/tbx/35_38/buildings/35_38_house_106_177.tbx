@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <building version="3" width="20" height="12" ExteriorWall="6" ExteriorWallTrim="0" Door="3" DoorFrame="0" Window="25" Curtains="0" Shutters="0" Stairs="24" RoofCap="21" RoofSlope="22" RoofTop="23" GrimeWall="0">
+=======
+<building version="3" width="20" height="12" ExteriorWall="5" ExteriorWallTrim="0" Door="3" DoorFrame="0" Window="24" Curtains="0" Shutters="0" Stairs="23" RoofCap="20" RoofSlope="21" RoofTop="22" GrimeWall="0">
+>>>>>>> Stashed changes
  <properties>
   <property name="Legend" value="Residential"/>
  </properties>
@@ -862,6 +866,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </rooms>
+<<<<<<< Updated upstream
   <tiles layer="FloorOverlay">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,11,17,17,11,11,11,11,17,17,11,11,0,0,0,15,0,0,
@@ -877,5 +882,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </tiles>
+=======
+>>>>>>> Stashed changes
  </floor>
 </building>

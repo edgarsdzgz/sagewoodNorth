@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="3" width="20" height="12" ExteriorWall="3" ExteriorWallTrim="0" Door="2" DoorFrame="1" Window="20" Curtains="0" Shutters="0" Stairs="19" RoofCap="16" RoofSlope="17" RoofTop="18" GrimeWall="0">
+<building version="3" width="20" height="12" ExteriorWall="5" ExteriorWallTrim="0" Door="3" DoorFrame="1" Window="23" Curtains="0" Shutters="0" Stairs="22" RoofCap="19" RoofSlope="20" RoofTop="21" GrimeWall="0">
  <properties>
   <property name="Legend" value="Residential"/>
  </properties>
@@ -13,6 +13,12 @@
   <tile enum="WestOpen" tile="fixtures_doors_01_002"/>
   <tile enum="NorthOpen" tile="fixtures_doors_01_003"/>
  </tile_entry>
+ <tile_entry category="doors">
+  <tile enum="West" tile="fixtures_doors_01_044"/>
+  <tile enum="North" tile="fixtures_doors_01_045"/>
+  <tile enum="WestOpen" tile="fixtures_doors_01_046"/>
+  <tile enum="NorthOpen" tile="fixtures_doors_01_047"/>
+ </tile_entry>
  <tile_entry category="exterior_walls">
   <tile enum="West" tile="walls_exterior_house_01_032"/>
   <tile enum="North" tile="walls_exterior_house_01_033"/>
@@ -22,6 +28,26 @@
   <tile enum="NorthWindow" tile="walls_exterior_house_01_041"/>
   <tile enum="WestDoor" tile="walls_exterior_house_01_042"/>
   <tile enum="NorthDoor" tile="walls_exterior_house_01_043"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="walls_exterior_house_01_052"/>
+  <tile enum="North" tile="walls_exterior_house_01_053"/>
+  <tile enum="NorthWest" tile="walls_exterior_house_01_054"/>
+  <tile enum="SouthEast" tile="walls_exterior_house_01_055"/>
+  <tile enum="WestWindow" tile="walls_exterior_house_01_060"/>
+  <tile enum="NorthWindow" tile="walls_exterior_house_01_061"/>
+  <tile enum="WestDoor" tile="walls_exterior_house_01_062"/>
+  <tile enum="NorthDoor" tile="walls_exterior_house_01_063"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="walls_exterior_house_02_080"/>
+  <tile enum="North" tile="walls_exterior_house_02_081"/>
+  <tile enum="NorthWest" tile="walls_exterior_house_02_082"/>
+  <tile enum="SouthEast" tile="walls_exterior_house_02_083"/>
+  <tile enum="WestWindow" tile="walls_exterior_house_02_088"/>
+  <tile enum="NorthWindow" tile="walls_exterior_house_02_089"/>
+  <tile enum="WestDoor" tile="walls_exterior_house_02_090"/>
+  <tile enum="NorthDoor" tile="walls_exterior_house_02_091"/>
  </tile_entry>
  <tile_entry category="floors">
   <tile enum="Floor" tile="floors_interior_carpet_01_000"/>
@@ -214,20 +240,660 @@
   <tile enum="North3" tile="fixtures_stairs_01_010"/>
  </tile_entry>
  <tile_entry category="windows">
-  <tile enum="West" tile="fixtures_windows_01_000"/>
-  <tile enum="North" tile="fixtures_windows_01_001"/>
+  <tile enum="West" tile="fixtures_windows_01_008"/>
+  <tile enum="North" tile="fixtures_windows_01_009"/>
  </tile_entry>
- <user_tiles/>
- <used_tiles>3 11 7 12 5 13 14 4 15 10 6 8 9</used_tiles>
- <used_furniture></used_furniture>
- <room Name="Hall" InternalName="hall" Color="255 0 0" InteriorWall="11" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Living Room" InternalName="livingroom" Color="0 255 127" InteriorWall="11" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Dining Room" InternalName="diningroom" Color="255 0 128" InteriorWall="11" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Bathroom" InternalName="bathroom" Color="255 128 0" InteriorWall="12" InteriorWallTrim="0" Floor="5" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Kitchen" InternalName="kitchen" Color="0 255 0" InteriorWall="13" InteriorWallTrim="0" Floor="5" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Bedroom1" InternalName="bedroom" Color="0 0 255" InteriorWall="14" InteriorWallTrim="0" Floor="4" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Bedroom2" InternalName="bedroom" Color="0 64 255" InteriorWall="15" InteriorWallTrim="0" Floor="4" GrimeFloor="0" GrimeWall="0"/>
- <room Name="Garage" InternalName="garagestorage" Color="0 128 255" InteriorWall="10" InteriorWallTrim="0" Floor="6" GrimeFloor="8" GrimeWall="9"/>
+ <furniture layer="Walls">
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_garage_01_002"/>
+   <tile x="0" y="1" name="walls_garage_01_001"/>
+   <tile x="0" y="2" name="walls_garage_01_000"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_garage_01_003"/>
+   <tile x="1" y="0" name="walls_garage_01_004"/>
+   <tile x="2" y="0" name="walls_garage_01_005"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="walls_garage_01_050"/>
+   <tile x="0" y="1" name="walls_garage_01_049"/>
+   <tile x="0" y="2" name="walls_garage_01_048"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="walls_garage_01_051"/>
+   <tile x="1" y="0" name="walls_garage_01_052"/>
+   <tile x="2" y="0" name="walls_garage_01_053"/>
+  </entry>
+ </furniture>
+ <furniture layer="WallFurniture">
+  <entry orient="W">
+   <tile x="0" y="0" name="lighting_indoor_01_001"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="lighting_indoor_01_000"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="lighting_indoor_01_002"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="lighting_indoor_01_003"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_counters_01_027"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_counters_01_026"/>
+  </entry>
+ </furniture>
+ <furniture corners="true">
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_counters_01_051"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_counters_01_053"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_counters_01_055"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_counters_01_049"/>
+  </entry>
+  <entry orient="SW">
+   <tile x="0" y="0" name="fixtures_counters_01_050"/>
+  </entry>
+  <entry orient="NW">
+   <tile x="0" y="0" name="fixtures_counters_01_052"/>
+  </entry>
+  <entry orient="NE">
+   <tile x="0" y="0" name="fixtures_counters_01_054"/>
+  </entry>
+  <entry orient="SE">
+   <tile x="0" y="0" name="fixtures_counters_01_048"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="appliances_cooking_01_004"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="appliances_cooking_01_005"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="appliances_cooking_01_006"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="appliances_cooking_01_007"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="appliances_cooking_01_033"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="appliances_cooking_01_032"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="appliances_cooking_01_057"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="appliances_cooking_01_056"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="appliances_cooking_01_058"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="appliances_cooking_01_059"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="appliances_refrigeration_01_005"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="appliances_refrigeration_01_004"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="appliances_refrigeration_01_007"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="appliances_refrigeration_01_006"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_sinks_01_008"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_sinks_01_009"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_sinks_01_010"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_sinks_01_011"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_shelving_01_029"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_shelving_01_028"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_shelving_01_030"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_shelving_01_031"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_shelving_01_025"/>
+   <tile x="0" y="1" name="furniture_shelving_01_024"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_shelving_01_026"/>
+   <tile x="1" y="0" name="furniture_shelving_01_027"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="carpentry_01_035"/>
+   <tile x="0" y="1" name="carpentry_01_034"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="carpentry_01_032"/>
+   <tile x="1" y="0" name="carpentry_01_033"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_seating_indoor_01_056"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_seating_indoor_01_057"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_seating_indoor_01_058"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_seating_indoor_01_059"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_storage_02_033"/>
+   <tile x="0" y="1" name="furniture_storage_02_032"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_storage_02_034"/>
+   <tile x="1" y="0" name="furniture_storage_02_035"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_storage_02_037"/>
+   <tile x="0" y="1" name="furniture_storage_02_036"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_storage_02_038"/>
+   <tile x="1" y="0" name="furniture_storage_02_039"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_034"/>
+   <tile x="0" y="1" name="fixtures_fireplaces_01_033"/>
+   <tile x="0" y="2" name="fixtures_fireplaces_01_032"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_019"/>
+   <tile x="1" y="0" name="fixtures_fireplaces_01_020"/>
+   <tile x="2" y="0" name="fixtures_fireplaces_01_021"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_005"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_000"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_shelving_01_041"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_shelving_01_040"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_shelving_01_042"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_shelving_01_043"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_051"/>
+   <tile x="0" y="1" name="furniture_seating_indoor_02_050"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_048"/>
+   <tile x="1" y="0" name="furniture_seating_indoor_02_049"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_053"/>
+   <tile x="0" y="1" name="furniture_seating_indoor_02_052"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_054"/>
+   <tile x="1" y="0" name="furniture_seating_indoor_02_055"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_tables_low_01_018"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_tables_low_01_019"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="appliances_television_01_005"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="appliances_television_01_004"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="appliances_television_01_007"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="appliances_television_01_006"/>
+  </entry>
+ </furniture>
+ <furniture layer="FloorFurniture">
+  <entry orient="W">
+   <tile x="0" y="0" name="floors_rugs_01_006"/>
+   <tile x="0" y="1" name="floors_rugs_01_002"/>
+   <tile x="0" y="2" name="floors_rugs_01_000"/>
+   <tile x="1" y="0" name="floors_rugs_01_007"/>
+   <tile x="1" y="1" name="floors_rugs_01_003"/>
+   <tile x="1" y="2" name="floors_rugs_01_001"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="floors_rugs_01_006"/>
+   <tile x="0" y="1" name="floors_rugs_01_000"/>
+   <tile x="1" y="0" name="floors_rugs_01_005"/>
+   <tile x="1" y="1" name="floors_rugs_01_004"/>
+   <tile x="2" y="0" name="floors_rugs_01_007"/>
+   <tile x="2" y="1" name="floors_rugs_01_001"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="floors_rugs_01_006"/>
+   <tile x="0" y="1" name="floors_rugs_01_000"/>
+   <tile x="1" y="0" name="floors_rugs_01_007"/>
+   <tile x="1" y="1" name="floors_rugs_01_001"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_045"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_044"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_046"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_047"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_bedding_01_030"/>
+   <tile x="0" y="1" name="furniture_bedding_01_028"/>
+   <tile x="1" y="0" name="furniture_bedding_01_031"/>
+   <tile x="1" y="1" name="furniture_bedding_01_029"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_bedding_01_025"/>
+   <tile x="0" y="1" name="furniture_bedding_01_024"/>
+   <tile x="1" y="0" name="furniture_bedding_01_027"/>
+   <tile x="1" y="1" name="furniture_bedding_01_026"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_bedding_01_018"/>
+   <tile x="0" y="1" name="furniture_bedding_01_016"/>
+   <tile x="1" y="0" name="furniture_bedding_01_019"/>
+   <tile x="1" y="1" name="furniture_bedding_01_017"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_bedding_01_021"/>
+   <tile x="0" y="1" name="furniture_bedding_01_020"/>
+   <tile x="1" y="0" name="furniture_bedding_01_023"/>
+   <tile x="1" y="1" name="furniture_bedding_01_022"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_004"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_005"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_006"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_seating_indoor_02_007"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_tables_high_01_005"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_tables_high_01_004"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_storage_01_008"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_storage_01_009"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_storage_01_010"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_storage_01_011"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_storage_01_017"/>
+   <tile x="0" y="1" name="furniture_storage_01_016"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_storage_01_018"/>
+   <tile x="1" y="0" name="furniture_storage_01_019"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="furniture_storage_01_021"/>
+   <tile x="0" y="1" name="furniture_storage_01_020"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="furniture_storage_01_022"/>
+   <tile x="1" y="0" name="furniture_storage_01_023"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_bathroom_01_001"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_bathroom_01_000"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_bathroom_01_002"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_bathroom_01_003"/>
+  </entry>
+ </furniture>
+ <furniture layer="WallFurniture">
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_bathroom_01_029"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_bathroom_01_028"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_bathroom_01_038"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_bathroom_01_037"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_bathroom_01_026"/>
+   <tile x="1" y="0" name="fixtures_bathroom_01_027"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_bathroom_01_025"/>
+   <tile x="0" y="1" name="fixtures_bathroom_01_024"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_bathroom_01_053"/>
+   <tile x="0" y="1" name="fixtures_bathroom_01_052"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_bathroom_01_054"/>
+   <tile x="1" y="0" name="fixtures_bathroom_01_055"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_sinks_01_013"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_sinks_01_012"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_sinks_01_029"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_sinks_01_028"/>
+  </entry>
+ </furniture>
+ <furniture corners="true">
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_counters_01_075"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_counters_01_077"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_counters_01_079"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_counters_01_073"/>
+  </entry>
+  <entry orient="SW">
+   <tile x="0" y="0" name="fixtures_counters_01_074"/>
+  </entry>
+  <entry orient="NW">
+   <tile x="0" y="0" name="fixtures_counters_01_076"/>
+  </entry>
+  <entry orient="NE">
+   <tile x="0" y="0" name="fixtures_counters_01_078"/>
+  </entry>
+  <entry orient="SE">
+   <tile x="0" y="0" name="fixtures_counters_01_072"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_decoration_01_004"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_decoration_01_005"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="walls_decoration_01_023"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="walls_decoration_01_020"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_031"/>
+   <tile x="0" y="1" name="fixtures_fireplaces_01_030"/>
+   <tile x="0" y="2" name="fixtures_fireplaces_01_023"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_014"/>
+   <tile x="1" y="0" name="fixtures_fireplaces_01_015"/>
+   <tile x="2" y="0" name="fixtures_fireplaces_01_022"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_029"/>
+   <tile x="0" y="1" name="fixtures_fireplaces_01_028"/>
+   <tile x="0" y="2" name="fixtures_fireplaces_01_027"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_fireplaces_01_008"/>
+   <tile x="1" y="0" name="fixtures_fireplaces_01_009"/>
+   <tile x="2" y="0" name="fixtures_fireplaces_01_010"/>
+  </entry>
+ </furniture>
+ <user_tiles>
+  <tile tile="floors_exterior_natural_01_013"/>
+  <tile tile="floors_exterior_street_01_017"/>
+  <tile tile="roofs_05_032"/>
+  <tile tile="roofs_05_037"/>
+  <tile tile="roofs_05_040"/>
+  <tile tile="roofs_05_054"/>
+  <tile tile="roofs_05_056"/>
+  <tile tile="roofs_05_061"/>
+ </user_tiles>
+ <used_tiles>4 14 10 15 8 16 17 7 18 13 9 11 12 2 1 23 3 6 5</used_tiles>
+ <used_furniture>0 1 2 3 4 5 6 7 8 9 10 11 12 13 33 15 34 14 16 21 17 18 19 20 22 23 24 25 26 27 28 29 30 31 32</used_furniture>
+ <room Name="Hall" InternalName="hall" Color="255 0 0" InteriorWall="14" InteriorWallTrim="0" Floor="10" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Closet" InternalName="closet" Color="200 200 200" InteriorWall="14" InteriorWallTrim="0" Floor="10" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Living Room" InternalName="livingroom" Color="0 255 127" InteriorWall="14" InteriorWallTrim="0" Floor="10" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Dining Room" InternalName="diningroom" Color="255 0 128" InteriorWall="14" InteriorWallTrim="0" Floor="10" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Bathroom" InternalName="bathroom" Color="255 128 0" InteriorWall="15" InteriorWallTrim="0" Floor="8" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Kitchen" InternalName="kitchen" Color="0 255 0" InteriorWall="16" InteriorWallTrim="0" Floor="8" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Bedroom1" InternalName="bedroom" Color="0 0 255" InteriorWall="17" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Bedroom2" InternalName="bedroom" Color="0 64 255" InteriorWall="18" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Garage" InternalName="garagestorage" Color="0 128 255" InteriorWall="13" InteriorWallTrim="0" Floor="9" GrimeFloor="11" GrimeWall="12"/>
+ <floor>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="19" y="2" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="19" y="6" dir="N" Tile="0"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="19" y="2"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="19" y="6"/>
+  <object type="door" FrameTile="1" x="14" y="4" dir="W" Tile="2"/>
+  <object type="door" FrameTile="1" x="10" y="5" dir="N" Tile="2"/>
+  <object type="door" FrameTile="1" x="11" y="4" dir="N" Tile="0"/>
+  <object type="door" FrameTile="1" x="8" y="3" dir="W" Tile="0"/>
+  <object type="door" FrameTile="1" x="6" y="5" dir="W" Tile="0"/>
+  <object type="door" FrameTile="1" x="3" y="5" dir="N" Tile="2"/>
+  <object type="door" FrameTile="1" x="9" y="2" dir="W" Tile="2"/>
+  <object type="door" FrameTile="1" x="8" y="7" dir="W" Tile="2"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="15" y="1" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="17" y="1" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="16" y="10" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="11" y="1" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="11" y="10" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="8" y="10" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="4" y="10" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="2" y="10" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="1" y="6" dir="W" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="8" y="1" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="4" y="1" dir="N" Tile="23"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="1" y="2" dir="W" Tile="23"/>
+  <object type="door" FrameTile="1" x="13" y="10" dir="N" Tile="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="W" x="13" y="9"/>
+  <object type="furniture" FurnitureTiles="1" orient="W" x="14" y="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="16" y="1"/>
+  <object type="furniture" FurnitureTiles="1" orient="W" x="10" y="1"/>
+  <object type="furniture" FurnitureTiles="1" orient="S" x="12" y="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="9" y="5"/>
+  <object type="furniture" FurnitureTiles="1" orient="E" x="7" y="8"/>
+  <object type="furniture" FurnitureTiles="1" orient="E" x="7" y="4"/>
+  <object type="furniture" FurnitureTiles="1" orient="S" x="4" y="4"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="2" y="5"/>
+  <object type="furniture" FurnitureTiles="1" orient="S" x="6" y="5"/>
+  <object type="furniture" FurnitureTiles="1" orient="E" x="5" y="6"/>
+  <object type="furniture" FurnitureTiles="1" orient="W" x="8" y="1"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="10" y="4"/>
+  <object type="furniture" FurnitureTiles="2" orient="N" x="12" y="1"/>
+  <object type="furniture" FurnitureTiles="2" orient="N" x="11" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="N" x="11" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="N" x="12" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="NW" x="10" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="NE" x="13" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="SE" x="13" y="3"/>
+  <object type="furniture" FurnitureTiles="4" orient="E" x="13" y="2"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="10" y="1"/>
+  <object type="furniture" FurnitureTiles="6" orient="N" x="12" y="1"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="10" y="3"/>
+  <object type="furniture" FurnitureTiles="8" orient="N" x="11" y="1"/>
+  <object type="furniture" FurnitureTiles="9" orient="N" x="9" y="1"/>
+  <object type="furniture" FurnitureTiles="9" orient="S" x="9" y="3"/>
+  <object type="furniture" FurnitureTiles="10" orient="W" x="14" y="5"/>
+  <object type="furniture" FurnitureTiles="10" orient="W" x="14" y="7"/>
+  <object type="furniture" FurnitureTiles="11" orient="W" x="2" y="7"/>
+  <object type="furniture" FurnitureTiles="12" orient="N" x="2" y="6"/>
+  <object type="furniture" FurnitureTiles="12" orient="W" x="1" y="7"/>
+  <object type="furniture" FurnitureTiles="12" orient="W" x="1" y="8"/>
+  <object type="furniture" FurnitureTiles="12" orient="S" x="2" y="9"/>
+  <object type="furniture" FurnitureTiles="12" orient="E" x="3" y="8"/>
+  <object type="furniture" FurnitureTiles="12" orient="E" x="3" y="7"/>
+  <object type="furniture" FurnitureTiles="13" orient="E" x="5" y="7"/>
+  <object type="furniture" FurnitureTiles="14" orient="N" x="1" y="1"/>
+  <object type="furniture" FurnitureTiles="15" orient="N" x="2" y="1"/>
+  <object type="furniture" FurnitureTiles="16" orient="N" x="6" y="1"/>
+  <object type="furniture" FurnitureTiles="16" orient="N" x="5" y="1"/>
+  <object type="furniture" FurnitureTiles="17" orient="W" x="1" y="3"/>
+  <object type="furniture" FurnitureTiles="18" orient="W" x="4" y="4"/>
+  <object type="furniture" FurnitureTiles="19" orient="E" x="4" y="4"/>
+  <object type="furniture" FurnitureTiles="20" orient="S" x="5" y="3"/>
+  <object type="furniture" FurnitureTiles="21" orient="E" x="7" y="2"/>
+  <object type="furniture" FurnitureTiles="22" orient="W" x="9" y="7"/>
+  <object type="furniture" FurnitureTiles="23" orient="W" x="11" y="5"/>
+  <object type="furniture" FurnitureTiles="24" orient="E" x="12" y="5"/>
+  <object type="furniture" FurnitureTiles="25" orient="W" x="9" y="9"/>
+  <object type="furniture" FurnitureTiles="26" orient="E" x="12" y="7"/>
+  <object type="furniture" FurnitureTiles="27" orient="W" x="6" y="8"/>
+  <object type="furniture" FurnitureTiles="28" orient="W" x="6" y="7"/>
+  <object type="furniture" FurnitureTiles="29" orient="W" x="6" y="6"/>
+  <object type="furniture" FurnitureTiles="30" orient="W" x="6" y="7"/>
+  <object type="furniture" FurnitureTiles="31" orient="S" x="7" y="9"/>
+  <object type="furniture" FurnitureTiles="32" orient="S" x="7" y="9"/>
+  <rooms>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,3,3,3,3,3,1,2,6,6,6,6,9,9,9,9,9,0,
+0,3,3,3,3,3,3,3,1,2,6,6,6,6,9,9,9,9,9,0,
+0,3,3,3,3,3,3,3,1,2,6,6,6,6,9,9,9,9,9,0,
+0,3,3,3,3,3,3,3,1,1,1,1,1,1,9,9,9,9,9,0,
+0,4,4,4,4,4,1,1,1,7,7,7,7,1,9,9,9,9,9,0,
+0,4,4,4,4,4,5,5,1,7,7,7,7,1,9,9,9,9,9,0,
+0,4,4,4,4,4,5,5,1,7,7,7,7,1,9,9,9,9,9,0,
+0,4,4,4,4,4,5,5,1,7,7,7,7,1,9,9,9,9,9,0,
+0,4,4,4,4,4,5,5,1,7,7,7,7,1,9,9,9,9,9,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</rooms>
+  <tiles layer="Floor">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
+ </floor>
  <floor>
   <rooms>
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -243,5 +909,20 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </rooms>
+  <tiles layer="Floor">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,8,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,4,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,
+0,7,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
  </floor>
 </building>

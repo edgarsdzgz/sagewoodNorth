@@ -804,18 +804,18 @@
   <object type="furniture" FurnitureTiles="1" orient="N" x="8" y="2"/>
   <object type="furniture" FurnitureTiles="2" orient="N" x="7" y="2"/>
   <object type="furniture" FurnitureTiles="3" orient="W" x="2" y="7"/>
-  <object type="furniture" FurnitureTiles="4" orient="S" x="12" y="9"/>
+  <object type="furniture" FurnitureTiles="4" orient="S" x="13" y="9"/>
   <object type="furniture" FurnitureTiles="4" orient="E" x="7" y="7"/>
   <object type="furniture" FurnitureTiles="5" orient="E" x="7" y="6"/>
   <object type="furniture" FurnitureTiles="6" orient="N" x="14" y="8"/>
-  <object type="furniture" FurnitureTiles="5" orient="S" x="13" y="9"/>
+  <object type="furniture" FurnitureTiles="5" orient="S" x="12" y="9"/>
   <object type="furniture" FurnitureTiles="7" orient="NE" x="9" y="2"/>
   <object type="furniture" FurnitureTiles="7" orient="E" x="9" y="3"/>
   <object type="furniture" FurnitureTiles="7" orient="NW" x="6" y="2"/>
   <object type="furniture" FurnitureTiles="7" orient="SW" x="6" y="4"/>
   <object type="furniture" FurnitureTiles="8" orient="N" x="7" y="2"/>
   <object type="furniture" FurnitureTiles="8" orient="N" x="8" y="2"/>
-  <object type="furniture" FurnitureTiles="9" orient="S" x="13" y="9"/>
+  <object type="furniture" FurnitureTiles="9" orient="S" x="12" y="9"/>
   <object type="furniture" FurnitureTiles="9" orient="E" x="7" y="6"/>
   <object type="furniture" FurnitureTiles="10" orient="W" x="6" y="8"/>
   <object type="furniture" FurnitureTiles="11" orient="S" x="6" y="8"/>
@@ -868,6 +868,10 @@
   <object type="furniture" FurnitureTiles="26" orient="W" x="10" y="8"/>
   <object type="furniture" FurnitureTiles="27" orient="S" x="10" y="4"/>
   <object type="furniture" FurnitureTiles="28" orient="E" x="5" y="8"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="17" y="8" dir="W" Tile="36"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="17" y="8" dir="W" Tile="36"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="17" y="5" dir="W" Tile="36"/>
+  <object type="window" CurtainsTile="0" ShuttersTile="0" x="13" y="10" dir="N" Tile="36"/>
   <rooms>
 0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,9,9,0,0,
 0,0,0,0,0,0,0,0,0,0,8,8,8,9,9,9,9,9,0,0,

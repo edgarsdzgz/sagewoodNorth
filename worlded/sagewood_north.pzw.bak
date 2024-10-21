@@ -222,10 +222,16 @@
   <property name="WaterDirection" value="180"/>
   <property name="WaterSpeed" value=".2"/>
   <lot x="108" y="272" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_01.tbx"/>
-  <lot x="-2" y="274" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_16.tbx"/>
   <lot x="108" y="231" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_18.tbx"/>
-  <lot x="-4" y="229" level="0" width="82" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_19.tbx"/>
-  <lot x="40" y="193" level="0" width="37" height="29" map="../../../TileZed/sagewood_futura_bldgs/futura_block_41.tbx"/>
+  <lot x="226" y="276" level="0" width="25" height="22" map="../tmx/tbx/36_37/buildings/36_37_apartment_2.tbx"/>
+  <lot x="252" y="282" level="0" width="20" height="16" map="../tmx/tbx/36_37/buildings/36_37_apartment_.tbx"/>
+  <lot x="58" y="271" level="0" width="18" height="6" map="../tmx/tbx/36_37/buildings/36_37_apartment_4.tbx"/>
+  <lot x="37" y="271" level="0" width="19" height="6" map="../tmx/tbx/36_37/buildings/36_37_apartment_5.tbx"/>
+  <lot x="16" y="271" level="0" width="19" height="6" map="../tmx/tbx/36_37/buildings/36_37_apartment_6.tbx"/>
+  <lot x="16" y="279" level="0" width="60" height="20" map="../tmx/tbx/36_37/buildings/futura_block_16.tbx"/>
+  <lot x="17" y="236" level="0" width="59" height="21" map="../tmx/tbx/36_37/buildings/futura_block_19.tbx"/>
+  <lot x="40" y="192" level="0" width="37" height="29" map="../tmx/tbx/36_37/buildings/36_37_gasBlock_.tbx"/>
+  <lot x="108" y="205" level="0" width="19" height="16" map="../tmx/tbx/36_37/buildings/36_37_apartment_3.tbx"/>
   <object type="SpawnPoint" x="189" y="297" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
   </object>
@@ -757,6 +763,7 @@
   <lot x="209" y="30" level="0" width="7" height="5" map="../tmx/tbx/35_38/rooms/35_38_0_movierental_209_30.tbx"/>
   <lot x="216" y="21" level="0" width="5" height="14" map="../tmx/tbx/35_38/rooms/35_38_0_movierental_216_21.tbx"/>
   <lot x="209" y="21" level="0" width="7" height="9" map="../tmx/tbx/35_38/rooms/35_38_0_officestorage_209_21.tbx"/>
+  <lot x="217" y="241" level="0" width="6" height="12" map="../tmx/tbx/35_38/buildings/35_38_apartment_217_241.tbx"/>
   <object group="Nav" type="Nav" x="128" y="228" level="0" width="173" height="10"/>
   <object group="Nav" type="Nav" x="85" y="0" level="0" width="14" height="300"/>
   <object type="SpawnPoint" x="298" y="232" level="0" width="1" height="1"/>
@@ -1042,6 +1049,9 @@
    <template name="ParkingStallW"/>
   </object>
   <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="123" y="156" level="0" width="4" height="3">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="120" y="165" level="0" width="4" height="3">
    <template name="ParkingStallW"/>
   </object>
  </cell>

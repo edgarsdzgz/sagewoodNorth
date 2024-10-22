@@ -2847,6 +2847,19 @@
     <property name="water" value="river"/>
    </properties>
   </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="179" y="0"/>
+     <point x="187" y="0"/>
+     <point x="187" y="97"/>
+     <point x="179" y="97"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="highway" value="secondary"/>
+   </properties>
+  </feature>
  </cell>
  <cell x="35" y="38">
   <feature>
